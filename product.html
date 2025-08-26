@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles3.css">
+<link rel="stylesheet" href="styles4.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/javanese-text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kapakana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+
+
+
+<title>Aureva</title>
+
+
+</head>
+<body>
+
+
+    <section class="header-hero-wrapper">
+
+  <!-- Main Header -->
+  <div class="main-header container">
+    <div class="main-left">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Collection</a>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h4>Featured</h4>
+                <ul>
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Shoes</h4>
+                <ul>
+<li><a href="shoes.html?cat=all">All Shoes</a></li>
+<li><a href="shoes.html?cat=sneakers">Sneakers</a></li>
+<li><a href="shoes.html?cat=heels-pumps">Heels & Pumps</a></li>
+<li><a href="shoes.html?cat=flats-sandals">Flats & Sandals</a></li>
+<li><a href="shoes.html?cat=boots">Boots</a></li>
+<li><a href="shoes.html?cat=sports-active">Sports & Active</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Clothing</h4>
+                <ul>
+              <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+      <li><a href="accessoriess.html">All Accessories</a></li>
+      <li><a href="accessoriess.html?cat=bags-purses">Bags & Purses</a></li>
+      <li><a href="accessoriess.html?cat=jewelry">Jewelry</a></li>
+      <li><a href="accessoriess.html?cat=belts">Belts</a></li>
+      <li><a href="accessoriess.html?cat=hats-caps">Hats & Caps</a></li>
+      <li><a href="accessoriess.html?cat=scarves">Scarves</a></li>
+      <li><a href="accessoriess.html?cat=extras">Extras</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+       </div>
+    <div class="main-icons">
+      <img src="icon.svg" alt="Favourite">
+<a href="cart.html" class="bag-link">
+  <img src="bag-icon.svg" alt="Bag">
+  <span id="bag-count" class="bag-count">0</span>
+</a>
+    </div>
+  </div>
+
+</section>
+
+
+  
+<header class="mobile-header">
+  <div class="mobile-top">
+    <img src="profile-icon.svg" alt="Profile" class="icon">
+   <a href="cart.html" class="bag-link">
+  <img src="bag-icon.svg" alt="Bag">
+  <span id="bag-count" class="bag-count">0</span>
+</a>
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </div>
+
+</header>
+
+
+<nav id="mobileSidebar" class="mobile-sidebar">
+  <ul>
+    <!-- Home -->
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Featured -->
+    <li>
+      <a href="#" class="submenu-toggle">Featured <span class="arrow">></span></a>
+      <ul class="submenu">
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+      </ul>
+    </li>
+
+    <!-- Shoes -->
+    <li>
+      <a href="#" class="submenu-toggle">Shoes <span class="arrow">></span></a>
+      <ul class="submenu">
+         <li data-cat="all"><a href="#">All Shoes</a></li>
+         <li data-cat="sneakers"><a href="#">Sneakers</a></li>
+        <li data-cat="heels-pumps"><a href="#">Heels & Pumps</a></li>
+       <li data-cat="flats-sandals"><a href="#">Flats & Sandals</a></li>
+       <li data-cat="boots"><a href="#">Boots</a></li>
+        <li data-cat="sports-active"><a href="#">Sports & Active</a></li>
+      </ul>
+    </li>
+
+    <!-- Clothing -->
+    <li>
+      <a href="#" class="submenu-toggle">Clothing <span class="arrow">></span></a>
+      <ul class="submenu" id="mobileCategoryFilters">
+             <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+      </ul>
+    </li>
+
+    <!-- Accessories -->
+    <li>
+      <a href="#" class="submenu-toggle">Accessories <span class="arrow">></span></a>
+      <ul class="submenu">
+       <li data-cat="all"><a href="#">All Accessories</a></li>
+        <li data-cat="bags-purses"><a href="#">Bags & Purses</a></li>
+       <li data-cat="jewelry"><a href="#">Jewelry</a></li>
+        <li data-cat="belts"><a href="#">Belts</a></li>
+        <li data-cat="hats-caps"><a href="#">Hats & Caps</a></li>
+        <li data-cat="scarves"><a href="#">Scarves</a></li>
+        <li data-cat="extras"><a href="#">Extras</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+  <!-- Sidebar Extra Content -->
+  <div class="sidebar-extra">
+    <h2 class="sidebar-title">Aureva</h2>
+    <p class="sidebar-text">
+      Become an Aureva member to unlock more fashion inspiration and style tips, helping you dress with confidence and elevate your look.
+    </p>
+    <button class="sidebar-btn">Sign In</button>
+
+    <ul class="sidebar-vertical">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Bag</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileSidebar = document.getElementById('mobileSidebar');
+
+// Toggle main sidebar
+menuBtn.addEventListener('click', () => {
+  mobileSidebar.classList.toggle('open');
+});
+
+// Toggle submenus
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+submenuToggles.forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  });
+});
+
+// ✅ Filter logic for accessories.html
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li'); // desktop
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2');
+
+  // Mobile submenu items
+  const mobileSubmenuItems = document.querySelectorAll('.submenu li[data-cat]');
+  const mobileHeader = document.querySelector('#mobileSidebar h2');
+
+  // Mapping for label names
+  const labelMap = {
+    'all': 'All Accessories',
+    'bags-purses': 'Bags & Purses',
+    'jewelry': 'Jewelry',
+    'belts': 'Belts',
+    'hats-caps': 'Hats & Caps',
+    'scarves': 'Scarves',
+    'extras': 'Extras'
+  };
+
+  function applyFilter(cat, source = 'desktop') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+
+    const label = labelMap[cat] || cat;
+
+    if (source === 'desktop') {
+      header.textContent = label;
+    } else if (mobileHeader) {
+      mobileHeader.textContent = label;
+    }
+  }
+
+  // Desktop clicks
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, 'desktop');
+    });
+  });
+
+  // Mobile submenu clicks
+  mobileSubmenuItems.forEach(li => {
+    li.style.cursor = 'pointer';
+    const link = li.querySelector('a');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // prevents reload
+        mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+        li.classList.add('active');
+
+        applyFilter(li.dataset.cat, 'mobile');
+
+        if (mobileSidebar) mobileSidebar.classList.remove('open'); // close sidebar
+      });
+    }
+  });
+
+  // Apply filter from URL query (e.g., accessories.html?cat=bags-purses)
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromUrl = params.get('cat');
+  if (categoryFromUrl) {
+    const liDesktop = Array.from(filters).find(el => el.dataset.cat === categoryFromUrl);
+    const liMobile = Array.from(mobileSubmenuItems).find(el => el.dataset.cat === categoryFromUrl);
+
+    if (liDesktop) {
+      filters.forEach(el => el.classList.remove('active'));
+      liDesktop.classList.add('active');
+    }
+    if (liMobile) {
+      mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+      liMobile.classList.add('active');
+    }
+
+    applyFilter(categoryFromUrl, 'desktop');
+  } else {
+    // Default: show all accessories
+    applyFilter('all', 'desktop');
+  }
+});
+</script>
+
+
+
+
+
+<!-- ✅ Promo Section -->
+<section class="promo-section">
+  <div class="promo-container">
+    <button class="promo-arrow left">&#10094;</button>
+    
+    <div class="promo-text-wrapper">
+      <div class="promo-text active">Enjoy 10% OFF plus free shipping on your very first order.</div>
+      <div class="promo-text">Redefine elegance—luxury fashion made for you.</div>
+      <div class="promo-text">Timeless pieces, crafted to elevate your style.</div>
+      <div class="promo-text">Step into sophistication with every look.</div>
+    </div>
+    
+    <button class="promo-arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+const promoTexts = document.querySelectorAll(".promo-text");
+let currentIndex = 0;
+
+// Show text
+function showPromo(index) {
+  promoTexts.forEach((text, i) => {
+    text.classList.remove("active");
+    if (i === index) text.classList.add("active");
+  });
+}
+
+// Auto scroll
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+}, 3000);
+
+// Arrows
+document.querySelector(".promo-arrow.left").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + promoTexts.length) % promoTexts.length;
+  showPromo(currentIndex);
+});
+
+document.querySelector(".promo-arrow.right").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+});
+</script>
+
+<section class="product-section" data-cat="miu-miu-blue-tank-top">
+
+  <!-- Left: Product Image -->
+  <div class="product-image">
+    <img src="img2.jpg" alt="Miu Miu Blue Tank Top">
+  </div>
+
+  <!-- Right: Product Details -->
+  <div class="product-details">
+
+    <!-- Brand, Name, Price -->
+    <div class="product-header">
+      <p class="brand">Miu Miu</p>
+      <p class="name">Blue Tank Top</p>
+      <p class="price">₱19,900</p>
+    </div>
+
+    <!-- Select Size -->
+    <p class="select-size">Select Size</p>
+
+    <!-- Size Options -->
+    <div class="size-options">
+      <div>XXS</div>
+      <div>XS</div>
+      <div>S</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite">
+        Favourite
+      </button>
+    </div>
+
+    <!-- Description -->
+    <p class="product-description">
+      The Miu Miu Blue Tank Top combines casual elegance with a touch of luxury, featuring a sleek silhouette and premium fabric for all-day comfort. Its rich blue hue adds a fresh, versatile pop of color, perfect for layering or wearing on its own for a chic, minimalist look.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="product-section" data-cat="chanel-slingback-heels">
+  <div class="product-image">
+    <img src="shopbyicon.svg" alt="Chanel Slingback Heels" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Slingback Heels</p>
+      <p class="price">₱78,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite"><img src="icon1.svg" alt="Favourite"/> Favourite</button>
+    </div>
+    <p class="product-description">
+      Classic beige and black leather with timeless elegance.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="prada-patent-leather-pumps">
+  <div class="product-image">
+    <img src="shopbyicon1.svg" alt="Prada Patent Leather Pumps" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Patent Leather Pumps</p>
+      <p class="price">₱65,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+        <div>38</div>
+      <div>39</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite"/> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      These Prada pumps feature a glossy black finish that adds a touch of sophistication. Designed with a sleek pointed toe, they bring timeless elegance to any look.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="jimmy-choo-love-heels">
+  <div class="product-image">
+    <img src="shopbyicon2.svg" alt="Jimmy Choo Love Heels" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Jimmy Choo</p>
+      <p class="name">Love Heels</p>
+      <p class="price">₱58,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Elegant suede stilettos with a modern silhouette. A refined design that combines timeless femininity with contemporary style.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="christian-louboutin-so-kate">
+  <div class="product-image">
+    <img src="shopbyicon3.svg" alt="Christian Louboutin So Kate" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Christian Louboutin</p>
+      <p class="name">So Kate</p>
+      <p class="price">₱72,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Signature sole with an ultra-slim stiletto heel. A bold and iconic design that embodies timeless glamour and sophistication.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="manolo-blahnik-hangisi-heels">
+  <div class="product-image">
+    <img src="shopbyicon4.svg" alt="Manolo Blahnik Hangisi Heels" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Manolo Blahnik</p>
+      <p class="name">Hangisi Heels</p>
+      <p class="price">₱85,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Luxurious satin finish with the signature crystal buckle detail. A timeless piece that blends elegance and sophistication effortlessly.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-horsebit-mules">
+  <div class="product-image">
+    <img src="shopbyicon5.svg" alt="Gucci Horsebit Mules" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Horsebit Mules</p>
+      <p class="price">₱52,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>35</div>
+      <div>36</div>
+      <div>37</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Chic leather slip-on crafted with Gucci’s signature horsebit hardware. A versatile design that transitions seamlessly from casual to sophisticated looks.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="celine-classic-box-bag">
+  <div class="product-image">
+    <img src="newarrival.svg" alt="Celine Classic Box Bag" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Celine</p>
+      <p class="name">Classic Box Bag</p>
+      <p class="price">₱145,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Sleek leather finish with a minimalist gold clasp. Perfect for both casual outings and formal events. Its compact design ensures style without compromising functionality.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="miu-miu-matelasse-shoulder-bag">
+  <div class="product-image">
+    <img src="arrival2.svg" alt="Miu Miu Matelassé Shoulder Bag" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Miu Miu</p>
+      <p class="name">Matelassé Shoulder Bag</p>
+      <p class="price">₱98,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Soft quilted leather with a chic chain strap. This elegant bag adds a touch of sophistication to any outfit. Its structured design ensures both style and functionality.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="celine-belt-bag-nano">
+  <div class="product-image">
+    <img src="arrival3.svg" alt="Celine Belt Bag Nano" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Celine</p>
+      <p class="name">Belt Bag Nano</p>
+      <p class="price">₱165,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Elegant structured design with signature belt detail. Perfect for day-to-night wear, this bag combines practicality with refined style. Its compact size makes it ideal for carrying essentials without compromising elegance.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="prada-re-edition-nylon-bag">
+  <div class="product-image">
+    <img src="arrival4.svg" alt="Prada Re-Edition Nylon Bag" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Re-Edition Nylon Bag</p>
+      <p class="price">₱89,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Iconic nylon style with leather trim and logo plaque. Lightweight yet durable, it’s perfect for everyday use. Its classic design pairs effortlessly with both casual and formal outfits.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="miu-miu-crystal-handle-bag">
+  <div class="product-image">
+    <img src="arrival5.svg" alt="Miu Miu Crystal Handle Bag" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Miu Miu</p>
+      <p class="name">Crystal Handle Bag</p>
+      <p class="price">₱120,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Statement sparkle with delicate crystal top handle. Perfect for evening events or special occasions, this bag adds a glamorous touch to any outfit. Its compact design ensures elegance without sacrificing practicality.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="coach-tabby-shoulder-bag-26">
+  <div class="product-image">
+    <img src="arrival6.svg" alt="Coach Tabby Shoulder Bag 26" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Coach</p>
+      <p class="name">Tabby Shoulder Bag 26</p>
+      <p class="price">₱28,000</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>Small</div>
+      <div>Medium</div>
+      <div>Large</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Refined leather with modern C hardware. This versatile shoulder bag is perfect for daily use and casual outings. Its sleek design combines functionality with a timeless style.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="red-sweater">
+  <div class="product-image">
+    <img src="img1.jpg" alt="Red Sweater" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Miu Miu</p>
+      <p class="name">Red Sweater</p>
+      <p class="price">₱28,500</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Cozy and stylish red sweater, perfect for layering or wearing solo. Ideal for casual outings or cozy nights in.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="Prada Summer Dress">
+  <div class="product-image">
+    <img src="dress1.jpg" alt="Prada Summer Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Summer Dress</p>
+      <p class="price">₱120,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Elegant Prada summer dress with a lightweight design, perfect for warm days and casual outings.
+    </p>
+  </div>
+</section>
+
+
+<section class="product-section" data-cat="grey-knit-cardigan">
+  <div class="product-image">
+    <img src="img3.jpg" alt="Grey Knit Cardigan" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Aurore</p>
+      <p class="name">Grey Knit Cardigan</p>
+      <p class="price">₱15,800</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Soft grey knit cardigan that adds warmth and style. Perfect for layering over shirts or dresses.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="brown-leather-jacket">
+  <div class="product-image">
+    <img src="img4.jpg" alt="Brown Leather Jacket" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Cavallo</p>
+      <p class="name">Brown Leather Jacket</p>
+      <p class="price">₱32,700</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Classic brown leather jacket with timeless appeal. Adds an edge to any outfit while keeping you comfortable.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="striped-polo-shirt">
+  <div class="product-image">
+    <img src="img5.jpg" alt="Striped Polo Shirt" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Harbor Lane</p>
+      <p class="name">Striped Polo Shirt</p>
+      <p class="price">₱14,200</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Casual striped polo shirt made from breathable fabric. Perfect for relaxed weekend looks or smart casual occasions.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="white-cotton-blouse">
+  <div class="product-image">
+    <img src="img6.jpg" alt="White Cotton Blouse" />
+  </div>
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Luxe Maison</p>
+      <p class="name">White Cotton Blouse</p>
+      <p class="price">₱12,200</p>
+    </div>
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+    <p class="product-description">
+      Elegant white cotton blouse with a clean finish. Lightweight and comfortable, ideal for work or casual wear.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="miu-miu-evening-gown">
+  <div class="product-image">
+    <img src="dress2.jpg" alt="Miu Miu Evening Gown" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Miu Miu</p>
+      <p class="name">Evening Gown</p>
+      <p class="price">₱250,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Miu Miu Evening Gown is a timeless piece designed for elegance and sophistication. 
+      Crafted from premium fabrics, it features a flowing silhouette that enhances natural grace and confidence. 
+      Ideal for formal gatherings, galas, or special occasions, this gown combines luxury with comfort. 
+      Its refined detailing and flawless finish make it a must-have statement dress for those unforgettable nights. 
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-floral-dress">
+  <div class="product-image">
+    <img src="dress3.jpg" alt="Gucci Floral Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Floral Dress</p>
+      <p class="price">₱300,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Gucci Floral Dress features a delicate floral print with a modern silhouette. 
+      Crafted from high-quality fabric, it ensures comfort while maintaining elegance. 
+      Perfect for spring events, daytime parties, or casual gatherings. 
+      Its soft texture and vibrant colors make it a standout piece in any wardrobe.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="dior-cocktail-dress">
+  <div class="product-image">
+    <img src="dress4.jpg" alt="Dior Cocktail Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Dior</p>
+      <p class="name">Cocktail Dress</p>
+      <p class="price">₱280,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Dior Cocktail Dress is a sophisticated choice for evening events. 
+      Its tailored fit highlights the silhouette while providing elegance and charm. 
+      Ideal for cocktail parties, receptions, or formal gatherings. 
+      With subtle detailing and a timeless design, it is both fashionable and versatile.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="chanel-midi-dress">
+  <div class="product-image">
+    <img src="dress5.jpg" alt="Chanel Midi Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Midi Dress</p>
+      <p class="price">₱350,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Chanel Midi Dress is a perfect blend of elegance and style. 
+      Its midi length provides a refined and graceful appearance. 
+      Crafted from premium materials, it offers comfort while maintaining luxury. 
+      Suitable for formal occasions, brunches, or stylish daytime events.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="valentino-red-dress">
+  <div class="product-image">
+    <img src="dress6.jpg" alt="Valentino Red Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Valentino</p>
+      <p class="name">Red Dress</p>
+      <p class="price">₱400,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Valentino Red Dress is a statement piece designed to turn heads. 
+      Its bold red color exudes confidence and sophistication. 
+      Perfect for galas, special events, or romantic evenings. 
+      The luxurious fabric and elegant cut ensure a flattering fit.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="versace-silk-dress">
+  <div class="product-image">
+    <img src="dress7.jpg" alt="Versace Silk Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Versace</p>
+      <p class="name">Silk Dress</p>
+      <p class="price">₱330,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Versace Silk Dress offers luxurious comfort with timeless style. 
+      Its smooth silk fabric flows beautifully, giving a soft, elegant drape. 
+      Perfect for formal dinners, parties, or elegant evenings out. 
+      A classic design with contemporary appeal makes it a wardrobe essential.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="saint-laurent-evening-dress">
+  <div class="product-image">
+    <img src="dress8.jpg" alt="Saint Laurent Evening Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Saint Laurent</p>
+      <p class="name">Evening Dress</p>
+      <p class="price">₱370,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Saint Laurent Evening Dress is designed for elegance and sophistication. 
+      Its sleek lines and exquisite fabric create a graceful silhouette. 
+      Perfect for red carpet events, formal parties, or black-tie occasions. 
+      Timeless yet modern, this dress makes a memorable impression.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="balenciaga-mini-dress">
+  <div class="product-image">
+    <img src="dress9.jpg" alt="Balenciaga Mini Dress" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Balenciaga</p>
+      <p class="name">Mini Dress</p>
+      <p class="price">₱280,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Balenciaga Mini Dress is a chic and contemporary piece perfect for parties or casual nights out. 
+      Its mini length and modern cut create a youthful, stylish vibe. 
+      Made from premium materials, it offers both comfort and luxury. 
+      This dress stands out with bold design elements and a flattering fit.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-tailored-pants">
+  <div class="product-image">
+    <img src="bottom1.jpg" alt="Gucci Tailored Pants" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Tailored Pants</p>
+      <p class="price">₱45,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Gucci Tailored Pants offer a perfect blend of sophistication and comfort. 
+      Crafted from premium fabrics, they provide a sleek silhouette and refined fit. 
+      Ideal for office wear, formal events, or stylish daytime outings. 
+      Their tailored design ensures elegance while remaining versatile for multiple occasions.
+    </p>
+  </div>
+</section>
+
+
+<section class="product-section" data-cat="prada-pleated-skirt">
+  <div class="product-image">
+    <img src="bottom2.jpg" alt="Prada Pleated Skirt" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Pleated Skirt</p>
+      <p class="price">₱38,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Prada Pleated Skirt combines elegance with playful movement. 
+      Its delicate pleats create a flowing, graceful effect when walking. 
+      Perfect for casual gatherings, brunches, or semi-formal events. 
+      Made from high-quality materials, it offers comfort without compromising style.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="chanel-tweed-skirt">
+  <div class="product-image">
+    <img src="bottom3.jpg" alt="Chanel Tweed Skirt" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Tweed Skirt</p>
+      <p class="price">₱52,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Chanel Tweed Skirt is a classic piece with timeless elegance. 
+      Its structured tweed fabric ensures a sophisticated fit and feel. 
+      Ideal for formal events, office wear, or stylish outings. 
+      The skirt's refined design makes it versatile and a statement piece in any wardrobe.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="saint-laurent-leather-pants">
+  <div class="product-image">
+    <img src="bottom4.jpg" alt="Saint Laurent Leather Pants" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Saint Laurent</p>
+      <p class="name">Leather Pants</p>
+      <p class="price">₱60,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Saint Laurent Leather Pants are bold and edgy, perfect for making a fashion statement. 
+      Crafted from premium leather, they combine durability with style. 
+      Ideal for evening outings, parties, or high-fashion events. 
+      The sleek fit and luxurious finish make them a standout wardrobe piece.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="balmain-high-waist-trousers">
+  <div class="product-image">
+    <img src="bottom5.jpg" alt="Balmain High-Waist Trousers" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Balmain</p>
+      <p class="name">High-Waist Trousers</p>
+      <p class="price">₱48,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Balmain High-Waist Trousers offer a chic, tailored look with a modern twist. 
+      Their high-waist design elongates the legs and enhances posture. 
+      Perfect for office wear, formal events, or elegant casual outings. 
+      Crafted from quality fabric, they ensure comfort while maintaining a polished style.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="dior-wide-leg-pants">
+  <div class="product-image">
+    <img src="bottom6.jpg" alt="Dior Wide-Leg Pants" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Dior</p>
+      <p class="name">Wide-Leg Pants</p>
+      <p class="price">₱55,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Dior Wide-Leg Pants are stylish and comfortable, offering effortless sophistication. 
+      Their flowing silhouette ensures ease of movement while maintaining elegance. 
+      Suitable for formal or semi-formal occasions, they pair perfectly with blouses or blazers. 
+      The high-quality fabric ensures durability and a luxurious finish.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="burberry-trench-coat">
+  <div class="product-image">
+    <img src="outer1.jpg" alt="Burberry Trench Coat" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Burberry</p>
+      <p class="name">Classic Trench Coat</p>
+      <p class="price">₱95,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Burberry Trench Coat is an iconic piece combining elegance and practicality. 
+      Made from durable materials, it provides protection from the elements while looking stylish. 
+      Perfect for both casual and formal occasions, it exudes timeless sophistication. 
+      Its tailored design and classic silhouette make it a wardrobe essential.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="louis-vuitton-monogram-jacket">
+  <div class="product-image">
+    <img src="outer2.jpg" alt="Louis Vuitton Monogram Jacket" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Monogram Jacket</p>
+      <p class="price">₱120,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Louis Vuitton Monogram Jacket is a luxury statement piece designed for modern fashion lovers. 
+      Its signature monogram pattern adds a bold and recognizable touch. 
+      Ideal for casual outings, evening events, or stylish city walks. 
+      The jacket offers a perfect balance of comfort, functionality, and high-fashion appeal.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-silk-bomber-jacket">
+  <div class="product-image">
+    <img src="outer3.jpg" alt="Gucci Bomber Jacket" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Silk Bomber Jacket</p>
+      <p class="price">₱85,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Gucci Silk Bomber Jacket is a luxurious and lightweight outerwear piece. 
+      Made with premium silk, it offers a soft, smooth feel and elegant sheen. 
+      Perfect for casual gatherings, evening events, or city strolls. 
+      Its modern design paired with high-quality craftsmanship makes it a versatile wardrobe staple.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="chanel-tweed-jacket">
+  <div class="product-image">
+    <img src="outer4.jpg" alt="Chanel Tweed Jacket" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Signature Tweed Jacket</p>
+      <p class="price">₱150,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Chanel Signature Tweed Jacket is a timeless luxury piece. 
+      Its classic tweed fabric and structured design convey sophistication and elegance. 
+      Ideal for professional settings, special occasions, or stylish daily wear. 
+      A versatile jacket that pairs effortlessly with skirts, trousers, or dresses.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="saint-laurent-leather-jacket">
+  <div class="product-image">
+    <img src="outer5.jpg" alt="Saint Laurent Leather Jacket" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Saint Laurent</p>
+      <p class="name">Classic Leather Jacket</p>
+      <p class="price">₱110,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Saint Laurent Classic Leather Jacket is a bold and stylish outerwear essential. 
+      Its high-quality leather ensures durability and a sleek finish. 
+      Perfect for evening outings, casual weekends, or city adventures. 
+      The timeless design and fitted silhouette make it a go-to statement piece.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="prada-down-puffer-jacket">
+  <div class="product-image">
+    <img src="outer6.jpg" alt="Prada Puffer Jacket" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Down Puffer Jacket</p>
+      <p class="price">₱98,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Prada Down Puffer Jacket is warm, stylish, and perfect for colder seasons. 
+      Its lightweight down filling provides excellent insulation without bulk. 
+      Ideal for winter outings, travel, or casual wear in chilly weather. 
+      The sleek design and premium finish make it both functional and fashionable.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="chanel-cashmere-set">
+  <div class="product-image">
+    <img src="lounge1.jpg" alt="Chanel Cashmere Set" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Cashmere Knit Set</p>
+      <p class="price">₱85,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Chanel Cashmere Knit Set is a luxurious loungewear piece perfect for relaxing in style. 
+      Crafted from soft cashmere, it provides ultimate comfort and warmth. 
+      Ideal for home wear, travel, or casual outings, the set balances elegance and coziness. 
+      Its timeless design ensures it remains a staple in your loungewear collection.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-silk-pajamas">
+  <div class="product-image">
+    <img src="lounge2.jpg" alt="Gucci Silk Pajamas" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Silk Pajama Set</p>
+      <p class="price">₱72,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Gucci Silk Pajamas are the epitome of luxury sleepwear. 
+      Made from smooth, breathable silk, they ensure comfort throughout the night. 
+      Perfect for lounging at home or a relaxed evening, their elegant design adds style to comfort. 
+      The set is versatile, making it a sophisticated addition to your loungewear collection.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="prada-relaxed-hoodie">
+  <div class="product-image">
+    <img src="lounge3.jpg" alt="Prada Relaxed Hoodie" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Relaxed Hoodie</p>
+      <p class="price">₱45,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Prada Relaxed Hoodie is a stylish and comfortable piece perfect for casual wear. 
+      Its soft fabric ensures warmth and ease of movement. 
+      Ideal for home lounging, outdoor walks, or casual meetups. 
+      The relaxed fit makes it easy to pair with joggers, jeans, or shorts for effortless style.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="louis-vuitton-monogram-joggers">
+  <div class="product-image">
+    <img src="lounge4.jpg" alt="Louis Vuitton Monogram Joggers" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Monogram Jogger Pants</p>
+      <p class="price">₱60,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Louis Vuitton Monogram Joggers combine luxury with comfort for everyday wear. 
+      Their soft fabric and tailored cut ensure a flattering fit. 
+      Perfect for lounging, casual outings, or travel. 
+      The iconic monogram adds a fashionable touch to a relaxed silhouette.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="balenciaga-oversized-cotton-tee">
+  <div class="product-image">
+    <img src="lounge5.jpg" alt="Balenciaga Oversized T-Shirt" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Balenciaga</p>
+      <p class="name">Oversized Cotton Tee</p>
+      <p class="price">₱35,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Balenciaga Oversized Cotton Tee is a trendy and comfortable loungewear essential. 
+      Its soft cotton fabric ensures all-day comfort. 
+      Perfect for relaxed days, casual outings, or layering under jackets. 
+      The oversized fit adds a modern, effortless style to any outfit.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="fendi-logo-bathrobe">
+  <div class="product-image">
+    <img src="lounge6.jpg" alt="Fendi Logo Robe" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Fendi</p>
+      <p class="name">Logo Bathrobe</p>
+      <p class="price">₱58,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Fendi Logo Bathrobe is the ultimate luxury loungewear for relaxing in style. 
+      Soft, plush material ensures warmth and comfort. 
+      Perfect for home lounging, after a bath, or casual indoor wear. 
+      The iconic Fendi logo adds a fashionable touch to a cozy essential.
+    </p>
+  </div>
+</section>
+<section class="product-section" data-cat="chanel-tweed-co-ord">
+  <div class="product-image">
+    <img src="set1.jpg" alt="Chanel Tweed Co-ord" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Chanel</p>
+      <p class="name">Tweed Crop & Skirt Set</p>
+      <p class="price">₱150,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Chanel Tweed Co-ord is a chic and elegant ensemble perfect for formal events or stylish gatherings. 
+      The crop top pairs seamlessly with the matching skirt, offering a balanced silhouette. 
+      Crafted from premium tweed, it combines texture and comfort. 
+      Its classic design ensures a timeless look while maintaining modern sophistication.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="gucci-knit-co-ord">
+  <div class="product-image">
+    <img src="set2.jpg" alt="Gucci Knit Co-ord" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Gucci</p>
+      <p class="name">Knit Top & Skirt Co-ord</p>
+      <p class="price">₱95,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Gucci Knit Co-ord is a stylish and comfortable set for casual and semi-formal occasions. 
+      The knit top and matching skirt provide flexibility and a flattering fit. 
+      Crafted with high-quality materials, it ensures durability and softness. 
+      Perfect for brunches, outings, or cozy gatherings with friends.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="louis-vuitton-monogram-set">
+  <div class="product-image">
+    <img src="set3.jpg" alt="Louis Vuitton Monogram Set" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Monogram Shirt & Pants</p>
+      <p class="price">₱135,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Louis Vuitton Monogram Set offers luxury and style in a coordinated outfit. 
+      The monogrammed shirt and matching pants make a bold fashion statement. 
+      Crafted from high-quality fabrics, it ensures comfort and longevity. 
+      Suitable for upscale events or stylish city outings, this set exudes sophistication.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="balmain-power-suit">
+  <div class="product-image">
+    <img src="set4.jpg" alt="Balmain Power Suit" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Balmain</p>
+      <p class="name">Tailored Blazer & Pants</p>
+      <p class="price">₱180,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      The Balmain Power Suit is a statement-making ensemble for confident women. 
+      The tailored blazer and pants create a sharp, professional silhouette. 
+      Crafted with premium fabrics, it ensures both elegance and comfort. 
+      Ideal for boardrooms, formal events, or any occasion where style meets authority.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="versace-printed-co-ord">
+  <div class="product-image">
+    <img src="set5.jpg" alt="Versace Printed Co-ord" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Versace</p>
+      <p class="name">Signature Print Set</p>
+      <p class="price">₱110,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Versace Printed Co-ord is a fashionable and vibrant set for stylish occasions. 
+      The signature print top and skirt add a bold statement to your wardrobe. 
+      Designed for comfort and elegance, it works perfectly for brunches, parties, or casual outings. 
+      A must-have for fashion-forward individuals.
+    </p>
+  </div>
+</section>
+
+<section class="product-section" data-cat="prada-minimal-co-ord">
+  <div class="product-image">
+    <img src="set6.jpg" alt="Prada Minimal Co-ord" />
+  </div>
+
+  <div class="product-details">
+    <div class="product-header">
+      <p class="brand">Prada</p>
+      <p class="name">Minimal Blouse & Skirt</p>
+      <p class="price">₱98,000</p>
+    </div>
+
+    <p class="select-size">Select Size</p>
+    <div class="size-options">
+      <div>S</div>
+      <div>M</div>
+      <div>L</div>
+    </div>
+
+    <div class="product-buttons">
+      <button class="add-to-bag">Add to Bag</button>
+      <button class="favourite">
+        <img src="icon1.svg" alt="Favourite" /> Favourite
+      </button>
+    </div>
+
+    <p class="product-description">
+      Prada Minimal Co-ord is a sleek and understated outfit perfect for modern elegance. 
+      The blouse and skirt offer a clean, versatile silhouette for multiple occasions. 
+      Crafted from premium fabrics, it ensures both comfort and durability. 
+      Ideal for work events, dinners, or stylish daytime outings.
+    </p>
+  </div>
+</section>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const products = document.querySelectorAll('.product-section');
+  const params = new URLSearchParams(window.location.search);
+  const cat = params.get('cat');
+
+  products.forEach(product => {
+    if (product.dataset.cat === cat) {
+      product.style.display = 'flex';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+});
+
+
+</script>
+
+<section class="suggested-products" style="margin-top: 30px; padding-left: 40px;">
+  <div class="suggested-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <p style="font-family: 'Javanese Text'; font-weight: normal; font-size: 20px; color: #000; margin: 0;">You Might Also Like</p>
+    <div class="scroll-buttons" style="display: flex; gap: 10px; position: relative; right: 50px;">
+      <button class="scroll-left" aria-label="Scroll Left">&#10094;</button>
+      <button class="scroll-right" aria-label="Scroll Right">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="suggested-container" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 10px;">
+    <!-- Suggested products will be dynamically generated here -->
+  </div>
+</section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const currentCat = params.get('cat'); // e.g., "dresses" or "sneakers"
+
+    const products = [
+        { title: 'Blue Tank Top', img: 'img2.jpg', cat: 'tops', link: 'product.html?cat=miu-miu-blue-tank-top' },
+        { title: 'Chanel Slingback Heels', img: 'shopbyicon.svg', cat: 'heels', link: 'product.html?cat=chanel-slingback-heels' },
+        { title: 'Nike Air Max', img: 'sneakers1.jpg', cat: 'sneakers', link: 'product.html?cat=nike-air-max' },
+        { title: 'Leather Bag', img: 'bag.jpg', cat: 'bags', link: 'product.html?cat=leather-bag' },
+        { title: 'Red Dress', img: 'dress.jpg', cat: 'dresses', link: 'product.html?cat=red-dress' },
+        { title: 'Baseball Cap', img: 'cap.jpg', cat: 'hats', link: 'product.html?cat=baseball-cap' },
+        { title: 'Gold Necklace', img: 'jewelry.jpg', cat: 'jewelry', link: 'product.html?cat=gold-necklace' },
+        { title: 'Sports Watch', img: 'watch.jpg', cat: 'accessories', link: 'product.html?cat=sports-watch' }
+    ];
+
+    const suggestedContainer = document.querySelector('.suggested-container');
+
+    // Filter out current product
+    const suggested = products.filter(p => p.cat !== currentCat).slice(0, 8);
+
+    suggested.forEach(p => {
+        const div = document.createElement('div');
+        div.classList.add('suggested-product');
+        div.innerHTML = `<a href="${p.link}"><img src="${p.img}" alt="${p.title}"></a>`;
+        suggestedContainer.appendChild(div);
+    });
+
+    // Scroll buttons
+    const scrollLeft = document.querySelector('.scroll-left');
+    const scrollRight = document.querySelector('.scroll-right');
+
+    // Function to get the card width (including margin)
+
+    
+    function getCardWidth() {
+        const card = document.querySelector('.suggested-product');
+        if (!card) return 360;
+        const style = window.getComputedStyle(card);
+        const margin = parseInt(style.marginLeft) + parseInt(style.marginRight);
+        return card.offsetWidth + margin;
+    }
+
+    scrollLeft.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
+    });
+    </script>
+
+
+
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Resources -->
+    <div class="footer-column resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-column help">
+      <h3>Help</h3>
+      <ul>
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-column company">
+      <h3>Company</h3>
+      <ul>
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-image">
+      <img src="footer-image.jpg" alt="Footer Image">
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<!-- Mobile Footer -->
+<footer class="footer-mobile">
+  <div class="footer-mobile-menu">
+    <!-- Resources -->
+    <div class="footer-item">
+      <button class="footer-btn">Resources</button>
+      <ul class="footer-submenu">
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-item">
+      <button class="footer-btn">Help</button>
+      <ul class="footer-submenu">
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-item">
+      <button class="footer-btn">Company</button>
+      <ul class="footer-submenu">
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="footer-mobile-image">
+    <img src="footer-image.jpg" alt="Footer Image">
+  </div>
+
+  <!-- Footer Copy -->
+  <p class="footer-mobile-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<script>
+  const footerButtons = document.querySelectorAll(".footer-btn");
+
+  footerButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const submenu = btn.nextElementSibling;
+      // toggle submenu display
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const DURATION = 800; // ms: adjust if you want faster/slower animation
+  const bagCounts = document.querySelectorAll(".bag-count");
+  const bagLinks = Array.from(document.querySelectorAll(".bag-link"));
+
+  function updateBagCount(cart) {
+    const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+    bagCounts.forEach(el => el.textContent = total);
+  }
+
+  // pick a visible bag-link (desktop or mobile). fallback to the last one
+  function pickVisibleBagLink() {
+    if (!bagLinks.length) return null;
+    for (const link of bagLinks) {
+      const style = getComputedStyle(link);
+      if (style.display === "none" || style.visibility === "hidden") continue;
+      if (!link.offsetParent) continue; // hidden by layout
+      const r = link.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0 && r.bottom >= 0 && r.top <= window.innerHeight) return link;
+    }
+    return bagLinks[bagLinks.length - 1] || null;
+  }
+
+  // Create a visible clone (img or div) and animate it from startRect -> targetRect
+  function animateCloneFromRect({ type, src, bg, text }, startRect, targetRect) {
+    if (!startRect || !targetRect) return;
+
+    // create clone element
+    let clone;
+    if (type === "img") {
+      clone = document.createElement("img");
+      clone.src = src;
+      clone.alt = "flying image";
+      clone.style.objectFit = "cover";
+      clone.style.display = "block";
+    } else if (type === "bg") {
+      clone = document.createElement("div");
+      clone.style.backgroundImage = bg;
+      clone.style.backgroundSize = "cover";
+      clone.style.backgroundPosition = "center";
+    } else {
+      clone = document.createElement("div");
+      clone.textContent = text || "";
+      clone.style.display = "flex";
+      clone.style.alignItems = "center";
+      clone.style.justifyContent = "center";
+      clone.style.font = "14px system-ui, -apple-system, 'Segoe UI', Roboto";
+      clone.style.color = "#111";
+      clone.style.background = "#fff";
+      clone.style.border = "1px solid rgba(0,0,0,0.08)";
+      clone.style.boxSizing = "border-box";
+    }
+
+    const startW = Math.max(4, startRect.width);
+    const startH = Math.max(4, startRect.height);
+
+    // initial position & styles
+    clone.style.position = "fixed";
+    clone.style.top = `${startRect.top}px`;
+    clone.style.left = `${startRect.left}px`;
+    clone.style.width = `${startW}px`;
+    clone.style.height = `${startH}px`;
+    clone.style.margin = "0";
+    clone.style.pointerEvents = "none";
+    clone.style.zIndex = "9999";
+    clone.style.borderRadius = "6px";
+    clone.style.transition = `transform ${DURATION}ms cubic-bezier(0.2,0.8,0.2,1), opacity ${DURATION}ms`;
+    clone.style.willChange = "transform, opacity";
+    clone.style.opacity = "1";
+    clone.style.transformOrigin = "center center";
+    document.body.appendChild(clone);
+
+    // compute center-to-center translation
+    const srcCx = startRect.left + startW / 2;
+    const srcCy = startRect.top + startH / 2;
+    const tgtCx = targetRect.left + targetRect.width / 2;
+    const tgtCy = targetRect.top + targetRect.height / 2;
+    const dx = tgtCx - srcCx;
+    const dy = tgtCy - srcCy;
+
+    // compute scale (shrink into bag)
+    const scale = Math.max(0.06, Math.min(0.35, (targetRect.width / startW) * 0.9));
+
+    // animate on next frame
+    clone.getBoundingClientRect();
+    requestAnimationFrame(() => {
+      clone.style.transform = `translate3d(${dx}px, ${dy}px, 0) scale(${scale})`;
+      clone.style.opacity = "0.55";
+      // optional: more rounded when going into small bag
+      if (targetRect.width < 40) clone.style.borderRadius = "50%";
+    });
+
+    // cleanup after animation finishes (or fallback timeout)
+    const cleanup = () => {
+      try { clone.remove(); } catch (e) {}
+    };
+    clone.addEventListener("transitionend", cleanup, { once: true });
+    setTimeout(cleanup, DURATION + 150);
+  }
+
+  // Get the best source info for animation from a product section:
+  // tries <img>, then .product-image background, then product img URL, then fallback to the Add button rect (text fallback).
+  function getSourceInfoAndRect(section, imgSrcFallback, addBtn) {
+    // Try product <img>
+    const realImg = section.querySelector(".product-image img");
+    if (realImg && (realImg.currentSrc || realImg.src)) {
+      return {
+        info: { type: "img", src: realImg.currentSrc || realImg.src },
+        rect: realImg.getBoundingClientRect()
+      };
+    }
+
+    // Try background-image on .product-image (or .product-thumb)
+    const bgEl = section.querySelector(".product-image") || section.querySelector(".product-thumb") || section;
+    if (bgEl) {
+      const bgStyles = getComputedStyle(bgEl);
+      if (bgStyles.backgroundImage && bgStyles.backgroundImage !== "none") {
+        return {
+          info: { type: "bg", bg: bgStyles.backgroundImage },
+          rect: bgEl.getBoundingClientRect()
+        };
+      }
+    }
+
+    // Try product image URL fallback passed from the product object
+    if (imgSrcFallback) {
+      // animate from the add button rect (so user sees motion)
+      const startRect = addBtn ? addBtn.getBoundingClientRect() : section.getBoundingClientRect();
+      return {
+        info: { type: "img", src: imgSrcFallback },
+        rect: startRect
+      };
+    }
+
+    // Last fallback: animate a text box from the add button
+    const startRect = addBtn ? addBtn.getBoundingClientRect() : section.getBoundingClientRect();
+    return {
+      info: { type: "text", text: section.querySelector(".name")?.textContent || "" },
+      rect: startRect
+    };
+  }
+
+  // Initialize cart count on load
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  updateBagCount(cart);
+
+  // Bind product sections
+  document.querySelectorAll(".product-section").forEach(section => {
+    // size selection
+    section.querySelectorAll(".size-options div").forEach(sizeDiv => {
+      sizeDiv.addEventListener("click", () => {
+        section.querySelectorAll(".size-options div").forEach(d => d.classList.remove("selected"));
+        sizeDiv.classList.add("selected");
+      });
+    });
+
+    const addToBagBtn = section.querySelector(".add-to-bag");
+    if (!addToBagBtn) return;
+    addToBagBtn.addEventListener("click", () => {
+      const selectedSize = section.querySelector(".size-options div.selected")?.textContent;
+      if (!selectedSize) {
+        alert("Please select a size!");
+        return;
+      }
+
+      // find product image src (fallbacks handled later)
+      const imgEl = section.querySelector(".product-image img");
+      const imgSrc = imgEl?.getAttribute("src") || section.dataset.img || "placeholder.jpg";
+
+      const product = {
+        id: section.dataset.cat,
+        brand: section.querySelector(".brand")?.textContent || "",
+        name: section.querySelector(".name")?.textContent || "",
+        price: section.querySelector(".price")?.textContent || "",
+        size: selectedSize,
+        quantity: 1,
+        img: imgSrc
+      };
+
+      // --- Save to cart (your original logic preserved) ---
+      cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const existing = cart.find(item => item.id === product.id && item.size === product.size);
+      if (existing) existing.quantity++;
+      else cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateBagCount(cart);
+
+      // --- Animation: determine source & target, then animate ---
+      const targetLink = pickVisibleBagLink();
+      if (!targetLink) return;
+
+      // get source info and rect (this covers img, background-image, fallback url, text)
+      const { info, rect: startRect } = getSourceInfoAndRect(section, product.img, addToBagBtn);
+      const targetRect = targetLink.getBoundingClientRect();
+
+      animateCloneFromRect(info, startRect, targetRect);
+    });
+  });
+
+  // If cart changes elsewhere (e.g., other scripts or tabs), keep counts synced
+  window.addEventListener("storage", (e) => {
+    if (e.key === "cart") {
+      cart = JSON.parse(e.newValue || "[]");
+      updateBagCount(cart);
+    }
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>

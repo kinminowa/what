@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles3.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/javanese-text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kapakana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+
+
+
+<title>Aureva</title>
+
+
+</head>
+<body>
+
+
+    <section class="header-hero-wrapper">
+
+  <!-- Main Header -->
+  <div class="main-header container">
+    <div class="main-left">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Collection</a>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h4>Featured</h4>
+                <ul>
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Shoes</h4>
+                <ul>
+<li><a href="shoes.html?cat=all">All Shoes</a></li>
+<li><a href="shoes.html?cat=sneakers">Sneakers</a></li>
+<li><a href="shoes.html?cat=heels-pumps">Heels & Pumps</a></li>
+<li><a href="shoes.html?cat=flats-sandals">Flats & Sandals</a></li>
+<li><a href="shoes.html?cat=boots">Boots</a></li>
+<li><a href="shoes.html?cat=sports-active">Sports & Active</a></li>
+
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Clothing</h4>
+                <ul>
+              <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+      <li><a href="accessoriess.html">All Accessories</a></li>
+      <li><a href="accessoriess.html?cat=bags-purses">Bags & Purses</a></li>
+      <li><a href="accessoriess.html?cat=jewelry">Jewelry</a></li>
+      <li><a href="accessoriess.html?cat=belts">Belts</a></li>
+      <li><a href="accessoriess.html?cat=hats-caps">Hats & Caps</a></li>
+      <li><a href="accessoriess.html?cat=scarves">Scarves</a></li>
+      <li><a href="accessoriess.html?cat=extras">Extras</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+       </div>
+    <div class="main-icons">
+      <img src="icon.svg" alt="Favourite">
+      <img src="bag-icon.svg" alt="Bag">
+    </div>
+  </div>
+
+</section>
+
+
+  
+<header class="mobile-header">
+  <div class="mobile-top">
+    <img src="profile-icon.svg" alt="Profile" class="icon">
+    <img src="bag-icon.svg" alt="Bag" class="icon">
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </div>
+
+</header>
+
+
+<nav id="mobileSidebar" class="mobile-sidebar">
+  <ul>
+    <!-- Home -->
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Featured -->
+    <li>
+      <a href="#" class="submenu-toggle">Featured <span class="arrow">></span></a>
+      <ul class="submenu">
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+      </ul>
+    </li>
+
+    <!-- Shoes -->
+    <li>
+      <a href="#" class="submenu-toggle">Shoes <span class="arrow">></span></a>
+      <ul class="submenu">
+<li><a href="shoes.html?cat=all">All Shoes</a></li>
+<li><a href="shoes.html?cat=sneakers">Sneakers</a></li>
+<li><a href="shoes.html?cat=heels-pumps">Heels & Pumps</a></li>
+<li><a href="shoes.html?cat=flats-sandals">Flats & Sandals</a></li>
+<li><a href="shoes.html?cat=boots">Boots</a></li>
+<li><a href="shoes.html?cat=sports-active">Sports & Active</a></li>
+
+      </ul>
+    </li>
+
+    <!-- Clothing -->
+    <li>
+      <a href="#" class="submenu-toggle">Clothing <span class="arrow">></span></a>
+      <ul class="submenu" id="mobileCategoryFilters">
+    <li data-cat="all"><a href="allclothing.html">All Clothing</a></li>
+    <li data-cat="tops"><a href="#">Tops</a></li>
+    <li data-cat="dresses"><a href="#">Dresses</a></li>
+    <li data-cat="bottoms"><a href="#">Bottoms</a></li>
+    <li data-cat="outerwear"><a href="#">Outerwear & Jackets</a></li>
+    <li data-cat="loungewear"><a href="#">Loungewear</a></li>
+    <li data-cat="sets"><a href="#">Sets & Co-ords</a></li>
+      </ul>
+    </li>
+
+    <!-- Accessories -->
+    <li>
+      <a href="#" class="submenu-toggle">Accessories <span class="arrow">></span></a>
+      <ul class="submenu">
+      <li><a href="accessoriess.html">All Accessories</a></li>
+      <li><a href="accessoriess.html?cat=bags-purses">Bags & Purses</a></li>
+      <li><a href="accessoriess.html?cat=jewelry">Jewelry</a></li>
+      <li><a href="accessoriess.html?cat=belts">Belts</a></li>
+      <li><a href="accessoriess.html?cat=hats-caps">Hats & Caps</a></li>
+      <li><a href="accessoriess.html?cat=scarves">Scarves</a></li>
+      <li><a href="accessoriess.html?cat=extras">Extras</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+  <!-- Sidebar Extra Content -->
+  <div class="sidebar-extra">
+    <h2 class="sidebar-title">Aureva</h2>
+    <p class="sidebar-text">
+      Become an Aureva member to unlock more fashion inspiration and style tips, helping you dress with confidence and elevate your look.
+    </p>
+    <button class="sidebar-btn">Sign In</button>
+
+    <ul class="sidebar-vertical">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Bag</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+
+
+  
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileSidebar = document.getElementById('mobileSidebar');
+
+// Toggle main sidebar
+menuBtn.addEventListener('click', () => {
+  mobileSidebar.classList.toggle('open');
+});
+
+// Toggle submenus
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+submenuToggles.forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      // Toggle display between none and flex
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  });
+});
+
+
+// ✅ Mobile filter logic (similar to desktop filters)
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li'); // desktop
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2');
+
+  // For mobile filters (assuming you duplicate the <ul> inside mobile sidebar)
+  const mobileFilters = document.querySelectorAll('#mobileCategoryFilters li'); 
+  const mobileHeader = document.querySelector('#mobileSidebar h2');
+
+  function applyFilter(cat, source = 'desktop') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+
+    // update header text
+    if (source === 'desktop') header.textContent = cat === 'all' ? 'All Clothing' : cat.charAt(0).toUpperCase() + cat.slice(1);
+    else mobileHeader.textContent = cat === 'all' ? 'All Clothing' : cat.charAt(0).toUpperCase() + cat.slice(1);
+  }
+
+  // Desktop clicks
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, 'desktop');
+    });
+  });
+
+  // Mobile clicks
+  mobileFilters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      mobileFilters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, 'mobile');
+      mobileSidebar.classList.remove('open'); // close sidebar after click
+    });
+  });
+  
+
+
+
+  // default state
+  applyFilter('all');
+});
+</script>
+
+
+<!-- ✅ Promo Section -->
+<section class="promo-section">
+  <div class="promo-container">
+    <button class="promo-arrow left">&#10094;</button>
+    
+    <div class="promo-text-wrapper">
+      <div class="promo-text active">Enjoy 10% OFF plus free shipping on your very first order.</div>
+      <div class="promo-text">Redefine elegance—luxury fashion made for you.</div>
+      <div class="promo-text">Timeless pieces, crafted to elevate your style.</div>
+      <div class="promo-text">Step into sophistication with every look.</div>
+    </div>
+    
+    <button class="promo-arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+const promoTexts = document.querySelectorAll(".promo-text");
+let currentIndex = 0;
+
+// Show text
+function showPromo(index) {
+  promoTexts.forEach((text, i) => {
+    text.classList.remove("active");
+    if (i === index) text.classList.add("active");
+  });
+}
+
+// Auto scroll
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+}, 3000);
+
+// Arrows
+document.querySelector(".promo-arrow.left").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + promoTexts.length) % promoTexts.length;
+  showPromo(currentIndex);
+});
+
+document.querySelector(".promo-arrow.right").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+});
+</script>
+
+
+
+<!-- ✅ All Clothing Section -->
+<section class="all-clothing">
+  <!-- Left Filters -->
+  <aside class="filters">
+    <h2 id="categoryTitle">All Clothing</h2>
+
+<ul id="categoryFilters">
+  <li data-cat="all">All Clothing</li>
+  <li data-cat="tops">Tops</li>
+  <li data-cat="dresses">Dresses</li>
+  <li data-cat="bottoms">Bottoms</li>
+  <li data-cat="outerwear">Outerwear & Jackets</li>
+  <li data-cat="loungewear">Loungewear</li>
+  <li data-cat="sets">Sets & Co-ords</li>
+</ul>
+
+<div class="extra-links">
+  <h3><a href="featured.html" class="featured-link">Featured</a></h3>
+  <h3><a href="shoes.html" class="shoes-link">Shoes</a></h3>
+  <h3><a href="accessoriess.html" class="accessories-link">Accessories</a></h3>
+</div>
+
+  </aside>
+
+  
+
+  <!-- Right Products -->
+  <div class="products">
+    <div class="product-item" data-category="tops">
+      <a href="product.html?cat=red-sweater">
+      <img src="img1.jpg" alt="Red Sweater">
+      </a>
+      <div class="product-info">
+        <p class="best-seller">Best Seller</p>
+        <p class="brand">Miu Miu</p>
+        <p class="name">Red Sweater</p>
+        <p class="price">₱28,500</p>
+      </div>
+    </div>
+
+<div class="product-item" data-category="tops">
+  <a href="product.html?cat=miu-miu-blue-tank-top">
+    <img src="img2.jpg" alt="Blue Tank Top">
+  </a>
+  <div class="product-info">
+    <p class="best-seller">Best Seller</p>
+    <p class="brand">Miu Miu</p>
+    <p class="name">Blue Tank Top</p>
+    <p class="price">₱19,900</p>
+  </div>
+</div>
+
+
+    <div class="product-item" data-category="tops">
+      <a href="product.html?cat=grey-knit-cardigan">
+      <img src="img3.jpg" alt="Grey Knit Cardigan">
+      </a>
+      <div class="product-info">
+        <p class="best-seller">Best Seller</p>
+        <p class="brand">Aurore</p>
+        <p class="name">Grey Knit Cardigan</p>
+        <p class="price">₱15,800</p>
+      </div>
+    </div>
+
+        <div class="product-item" data-category="tops">
+          <a href="product.html?cat=brown-leather-jacket">
+      <img src="img4.jpg" alt="Brown Leather Jacket">
+      </a>
+      <div class="product-info">
+        <p class="best-seller">Best Seller</p>
+        <p class="brand">Cavallo</p>
+        <p class="name">Brown Leather Jacket</p>
+        <p class="price">₱32,700</p>
+      </div>
+    </div>
+
+        <div class="product-item" data-category="tops">
+          <a href="product.html?cat=striped-polo-shirt">
+      <img src="img5.jpg" alt="Striped Polo Shirt">
+      </a>
+      <div class="product-info">
+        <p class="best-seller">Best Seller</p>
+        <p class="brand">Harbor Lane</p>
+        <p class="name">Striped Polo Shirt</p>
+        <p class="price">₱14,200</p>
+      </div>
+    </div>
+
+        <div class="product-item" data-category="tops">
+          <a href="product.html?cat=white-cotton-blouse">
+      <img src="img6.jpg" alt="White Cotton Blouse">
+      </a>
+      <div class="product-info">
+        <p class="best-seller">Best Seller</p>
+        <p class="brand">Luxe Maison</p>
+        <p class="name">Grey Knit Cardigan</p>
+        <p class="price">₱12,200</p>
+      </div>
+    </div>
+      
+<!-- Dresses -->
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=Prada Summer Dress">
+  <img src="dress1.jpg" alt="Prada Summer Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Prada</p>
+    <p class="name">Summer Dress</p>
+    <p class="price">₱120.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=miu-miu-evening-gown">
+  <img src="dress2.jpg" alt="Miu Miu Evening Gown">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Miu Miu</p>
+    <p class="name">Evening Gown</p>
+    <p class="price">₱250.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=gucci-floral-dress">
+  <img src="dress3.jpg" alt="Gucci Floral Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Gucci</p>
+    <p class="name">Floral Dress</p>
+    <p class="price">₱300.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=dior-cocktail-dress">
+  <img src="dress4.jpg" alt="Dior Cocktail Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Dior</p>
+    <p class="name">Cocktail Dress</p>
+    <p class="price">₱280.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=chanel-midi-dress">
+  <img src="dress5.jpg" alt="Chanel Midi Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Chanel</p>
+    <p class="name">Midi Dress</p>
+    <p class="price">₱350.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=valentino-red-dress">
+  <img src="dress6.jpg" alt="Valentino Red Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Valentino</p>
+    <p class="name">Red Dress</p>
+    <p class="price">₱400.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=versace-silk-dress">
+  <img src="dress7.jpg" alt="Versace Silk Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Versace</p>
+    <p class="name">Silk Dress</p>
+    <p class="price">₱330.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=
+saint-laurent-evening-dress
+">
+  <img src="dress8.jpg" alt="Saint Laurent Evening Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Saint Laurent</p>
+    <p class="name">Evening Dress</p>
+    <p class="price">₱370.000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="dresses">
+  <a href="product.html?cat=
+balenciaga-mini-dress">
+  <img src="dress9.jpg" alt="Balenciaga Mini Dress">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Balenciaga</p>
+    <p class="name">Mini Dress</p>
+    <p class="price">₱280.000</p>
+  </div>
+</div>
+
+<!-- Bottoms -->
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat=gucci-tailored-pants">
+  <img src="bottom1.jpg" alt="Gucci Tailored Pants">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Gucci</p>
+    <p class="name">Tailored Pants</p>
+    <p class="price">₱45,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat=prada-pleated-skirt">
+  <img src="bottom2.jpg" alt="Prada Pleated Skirt">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Prada</p>
+    <p class="name">Pleated Skirt</p>
+    <p class="price">₱38,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat="chanel-tweed-skirt">
+  <img src="bottom3.jpg" alt="Chanel Tweed Skirt">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Chanel</p>
+    <p class="name">Tweed Skirt</p>
+    <p class="price">₱52,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat=saint-laurent-leather-pants">
+  <img src="bottom4.jpg" alt="Saint Laurent Leather Pants">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Saint Laurent</p>
+    <p class="name">Leather Pants</p>
+    <p class="price">₱60,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat=balmain-high-waist-trousers">
+  <img src="bottom5.jpg" alt="Balmain High-Waist Trousers">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Balmain</p>
+    <p class="name">High-Waist Trousers</p>
+    <p class="price">₱48,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="bottoms">
+  <a href="product.html?cat=dior-wide-leg-pants">
+  <img src="bottom6.jpg" alt="Dior Wide-Leg Pants">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Dior</p>
+    <p class="name">Wide-Leg Pants</p>
+    <p class="price">₱55,000</p>
+  </div>
+</div>
+
+<!-- Outerwear & Jackets -->
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=burberry-trench-coat">
+  <img src="outer1.jpg" alt="Burberry Trench Coat">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Burberry</p>
+    <p class="name">Classic Trench Coat</p>
+    <p class="price">₱95,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=louis-vuitton-monogram-jacket">
+  <img src="outer2.jpg" alt="Louis Vuitton Monogram Jacket">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Louis Vuitton</p>
+    <p class="name">Monogram Jacket</p>
+    <p class="price">₱120,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=gucci-silk-bomber-jacket">
+  <img src="outer3.jpg" alt="Gucci Bomber Jacket">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Gucci</p>
+    <p class="name">Silk Bomber Jacket</p>
+    <p class="price">₱85,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=chanel-tweed-jacket">
+  <img src="outer4.jpg" alt="Chanel Tweed Jacket">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Chanel</p>
+    <p class="name">Signature Tweed Jacket</p>
+    <p class="price">₱150,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=saint-laurent-leather-jacket">
+  <img src="outer5.jpg" alt="Saint Laurent Leather Jacket">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Saint Laurent</p>
+    <p class="name">Classic Leather Jacket</p>
+    <p class="price">₱110,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="outerwear">
+  <a href="product.html?cat=prada-down-puffer-jacket">
+  <img src="outer6.jpg" alt="Prada Puffer Jacket">
+  </a>
+  <div class="product-info">
+    <p class="best-seller"></p>
+    <p class="brand">Prada</p>
+    <p class="name">Down Puffer Jacket</p>
+    <p class="price">₱98,000</p>
+  </div>
+</div>
+
+<!-- Loungewear -->
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=chanel-cashmere-set">
+  <img src="lounge1.jpg" alt="Chanel Cashmere Set">
+  </a>
+  <div class="product-info">
+    <p class="brand">Chanel</p>
+    <p class="name">Cashmere Knit Set</p>
+    <p class="price">₱85,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=gucci-silk-pajamas">
+  <img src="lounge2.jpg" alt="Gucci Silk Pajamas">
+  </a>
+  <div class="product-info">
+    <p class="brand">Gucci</p>
+    <p class="name">Silk Pajama Set</p>
+    <p class="price">₱72,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=prada-relaxed-hoodie">
+  <img src="lounge3.jpg" alt="Prada Relaxed Hoodie">
+  </a>
+  <div class="product-info">
+    <p class="brand">Prada</p>
+    <p class="name">Relaxed Hoodie</p>
+    <p class="price">₱45,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=louis-vuitton-monogram-joggers">
+  <img src="lounge4.jpg" alt="Louis Vuitton Monogram Joggers">
+  </a>
+  <div class="product-info">
+    <p class="brand">Louis Vuitton</p>
+    <p class="name">Monogram Jogger Pants</p>
+    <p class="price">₱60,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=balenciaga-oversized-cotton-tee">
+  <img src="lounge5.jpg" alt="Balenciaga Oversized T-Shirt">
+  </a>
+  <div class="product-info">
+    <p class="brand">Balenciaga</p>
+    <p class="name">Oversized Cotton Tee</p>
+    <p class="price">₱35,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="loungewear">
+  <a href="product.html?cat=fendi-logo-bathrobe">
+  <img src="lounge6.jpg" alt="Fendi Logo Robe">
+  </a>
+  <div class="product-info">
+    <p class="brand">Fendi</p>
+    <p class="name">Logo Bathrobe</p>
+    <p class="price">₱58,000</p>
+  </div>
+</div>
+
+<!-- Sets & Co-ords -->
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=chanel-tweed-co-ord">
+  <img src="set1.jpg" alt="Chanel Tweed Co-ord">
+  </a>
+  <div class="product-info">
+    <p class="brand">Chanel</p>
+    <p class="name">Tweed Crop & Skirt Set</p>
+    <p class="price">₱150,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=gucci-knit-co-ord">
+  <img src="set2.jpg" alt="Gucci Knit Co-ord">
+  </a>
+  <div class="product-info">
+    <p class="brand">Gucci</p>
+    <p class="name">Knit Top & Skirt Co-ord</p>
+    <p class="price">₱95,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=louis-vuitton-monogram-set">
+  <img src="set3.jpg" alt="Louis Vuitton Monogram Set">
+  </a>
+  <div class="product-info">
+    <p class="brand">Louis Vuitton</p>
+    <p class="name">Monogram Shirt & Pants</p>
+    <p class="price">₱135,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=balmain-power-suit">
+  <img src="set4.jpg" alt="Balmain Power Suit">
+  </a>
+  <div class="product-info">
+    <p class="brand">Balmain</p>
+    <p class="name">Tailored Blazer & Pants</p>
+    <p class="price">₱180,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=versace-printed-co-ord">
+  <img src="set5.jpg" alt="Versace Printed Co-ord">
+  </a>
+  <div class="product-info">
+    <p class="brand">Versace</p>
+    <p class="name">Signature Print Set</p>
+    <p class="price">₱110,000</p>
+  </div>
+</div>
+
+<div class="product-item" data-category="sets">
+  <a href="product.html?cat=prada-minimal-co-ord">
+  <img src="set6.jpg" alt="Prada Minimal Co-ord">
+  </a>
+  <div class="product-info">
+    <p class="brand">Prada</p>
+    <p class="name">Minimal Blouse & Skirt</p>
+    <p class="price">₱98,000</p>
+  </div>
+</div>
+
+    
+  </div>
+</section>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li');
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2'); // ✅ grab the h2
+
+  function applyFilter(cat, label = '') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+    header.textContent = label || (cat === 'all' ? 'All Clothing' : cat);
+  }
+
+  // ✅ check URL parameter
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromUrl = params.get('cat');
+
+  if (categoryFromUrl) {
+    // find matching <li>
+    const li = Array.from(filters).find(el => el.dataset.cat === categoryFromUrl);
+    if (li) {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(categoryFromUrl, li.textContent);
+    }
+  } else {
+    // default state if no ?cat=
+    applyFilter('all', 'All Clothing');
+  }
+
+  // ✅ still handle clicks inside page
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, li.textContent);
+    });
+  });
+});
+</script>
+
+
+
+
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Resources -->
+    <div class="footer-column resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-column help">
+      <h3>Help</h3>
+      <ul>
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-column company">
+      <h3>Company</h3>
+      <ul>
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-image">
+      <img src="footer-image.jpg" alt="Footer Image">
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<!-- Mobile Footer -->
+<footer class="footer-mobile">
+  <div class="footer-mobile-menu">
+    <!-- Resources -->
+    <div class="footer-item">
+      <button class="footer-btn">Resources</button>
+      <ul class="footer-submenu">
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-item">
+      <button class="footer-btn">Help</button>
+      <ul class="footer-submenu">
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-item">
+      <button class="footer-btn">Company</button>
+      <ul class="footer-submenu">
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="footer-mobile-image">
+    <img src="footer-image.jpg" alt="Footer Image">
+  </div>
+
+  <!-- Footer Copy -->
+  <p class="footer-mobile-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<script>
+  const footerButtons = document.querySelectorAll(".footer-btn");
+
+  footerButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const submenu = btn.nextElementSibling;
+      // toggle submenu display
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* Promo Section */
+.promo-section {
+  height: 74px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* adjust depending on your header */
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between arrows & text */
+}
+
+.promo-text-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 600px; /* adjust width */
+  text-align: center;
+}
+
+.promo-text {
+  font-family: "Javanese Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.promo-text.active {
+  opacity: 1;
+  position: relative;
+}
+
+.promo-arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+
+
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .promo-section {
+    margin-top: 100px; /* push it below mobile header */
+    height: 64px;
+  }
+
+  .promo-text-wrapper {
+    width: 250px; /* narrower on mobile */
+  }
+
+  .promo-text {
+    font-size: 14px;
+  }
+}
+/* ✅ All Clothing Section */
+.all-clothing {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.featured {  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.shoes { display: flex;
+  gap: 30px;
+  padding: 20px;}
+
+.accessories {display: flex;
+  gap: 30px;
+  padding: 20px;}
+
+/* Left Filters */
+.filters {
+  width: 250px;
+  border-right: 1px solid #ccc;
+  font-family: "Javanese Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+
+  /* ✅ Prevent shrinking */
+  flex-shrink: 0;
+}
+
+
+
+.filters h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc; /* grey line */
+  cursor: pointer;
+}
+
+.filters .hide-filters {
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Right Products */
+.products {
+  display: flex;
+  flex-direction: row;   /* ✅ put items side by side */
+  flex-wrap: wrap;       /* ✅ allow them to move to 2nd/3rd row on smaller screens */
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column; /* ✅ stack image then text */
+  align-items: flex-start; /* align text to left (or center if you prefer) */
+  gap: 10px;
+
+}
+.product-info {
+  font-family: "Javanese Text", sans-serif;
+  font-size: 20px;
+  line-height: 1; /* tighter text lines */
+}
+
+
+.product-item img {
+  width: 543px;
+  height: 495px;
+  object-fit: cover;
+}
+
+.product-info {
+  font-family: "Javanese Text", sans-serif;
+  font-size: 20px;
+}
+
+.product-info .best-seller {
+  color: #AD1D1D;
+}
+
+.product-info .brand {
+  font-weight: 400;
+  color: black;
+}
+
+.product-info .name,
+.product-info .price {
+  color: #464646;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .filters,
+  .hide-filters
+  .options {
+    display: none;   /* hide them on mobile */
+  }
+
+    .products {
+    display: flex;
+    flex-direction: column; /* stack items for small screens */
+    gap: 20px;
+    width: 100%;
+  }
+
+.product-item img {
+  width: 439px;
+  height: 295px;
+  object-fit: cover;
+  max-width: 100%;   /* prevents overflow on small screens */
+}
+
+
+  .product-info {
+    font-size: 18px;
+    text-align: left; /* or center */
+    width: 100%;
+    line-height: 1;
+  }
+}
+
+
+.featured-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000; /* black */
+}
+
+.featured-link:hover {
+  color: #c00; /* optional hover effect */
+}
+
+
+.filters h3 {
+  border-bottom: 1px solid #ccc; /* light grey line */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.filters h3 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}

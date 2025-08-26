@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles3.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/javanese-text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kapakana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+
+
+
+<title>Aureva</title>
+
+
+</head>
+<body>
+
+
+    <section class="header-hero-wrapper">
+
+  <!-- Main Header -->
+  <div class="main-header container">
+    <div class="main-left">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Collection</a>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h4>Featured</h4>
+                <ul>
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Shoes</h4>
+                <ul>
+<li><a href="shoes.html?cat=all">All Shoes</a></li>
+<li><a href="shoes.html?cat=sneakers">Sneakers</a></li>
+<li><a href="shoes.html?cat=heels-pumps">Heels & Pumps</a></li>
+<li><a href="shoes.html?cat=flats-sandals">Flats & Sandals</a></li>
+<li><a href="shoes.html?cat=boots">Boots</a></li>
+<li><a href="shoes.html?cat=sports-active">Sports & Active</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Clothing</h4>
+                <ul>
+              <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+      <li><a href="accessoriess.html">All Accessories</a></li>
+      <li><a href="accessoriess.html?cat=bags-purses">Bags & Purses</a></li>
+      <li><a href="accessoriess.html?cat=jewelry">Jewelry</a></li>
+      <li><a href="accessoriess.html?cat=belts">Belts</a></li>
+      <li><a href="accessoriess.html?cat=hats-caps">Hats & Caps</a></li>
+      <li><a href="accessoriess.html?cat=scarves">Scarves</a></li>
+      <li><a href="accessoriess.html?cat=extras">Extras</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+       </div>
+    <div class="main-icons">
+      <img src="icon.svg" alt="Favourite">
+      <img src="bag-icon.svg" alt="Bag">
+    </div>
+  </div>
+
+</section>
+
+
+  
+<header class="mobile-header">
+  <div class="mobile-top">
+    <img src="profile-icon.svg" alt="Profile" class="icon">
+    <img src="bag-icon.svg" alt="Bag" class="icon">
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </div>
+
+</header>
+
+
+<nav id="mobileSidebar" class="mobile-sidebar">
+  <ul>
+    <!-- Home -->
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Featured -->
+    <li>
+      <a href="#" class="submenu-toggle">Featured <span class="arrow">></span></a>
+      <ul class="submenu">
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+      </ul>
+    </li>
+
+    <!-- Shoes -->
+    <li>
+      <a href="#" class="submenu-toggle">Shoes <span class="arrow">></span></a>
+      <ul class="submenu">
+         <li data-cat="all"><a href="#">All Shoes</a></li>
+         <li data-cat="sneakers"><a href="#">Sneakers</a></li>
+        <li data-cat="heels-pumps"><a href="#">Heels & Pumps</a></li>
+       <li data-cat="flats-sandals"><a href="#">Flats & Sandals</a></li>
+       <li data-cat="boots"><a href="#">Boots</a></li>
+        <li data-cat="sports-active"><a href="#">Sports & Active</a></li>
+      </ul>
+    </li>
+
+    <!-- Clothing -->
+    <li>
+      <a href="#" class="submenu-toggle">Clothing <span class="arrow">></span></a>
+      <ul class="submenu" id="mobileCategoryFilters">
+             <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+      </ul>
+    </li>
+
+    <!-- Accessories -->
+    <li>
+      <a href="#" class="submenu-toggle">Accessories <span class="arrow">></span></a>
+      <ul class="submenu">
+       <li data-cat="all"><a href="#">All Accessories</a></li>
+        <li data-cat="bags-purses"><a href="#">Bags & Purses</a></li>
+       <li data-cat="jewelry"><a href="#">Jewelry</a></li>
+        <li data-cat="belts"><a href="#">Belts</a></li>
+        <li data-cat="hats-caps"><a href="#">Hats & Caps</a></li>
+        <li data-cat="scarves"><a href="#">Scarves</a></li>
+        <li data-cat="extras"><a href="#">Extras</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+  <!-- Sidebar Extra Content -->
+  <div class="sidebar-extra">
+    <h2 class="sidebar-title">Aureva</h2>
+    <p class="sidebar-text">
+      Become an Aureva member to unlock more fashion inspiration and style tips, helping you dress with confidence and elevate your look.
+    </p>
+    <button class="sidebar-btn">Sign In</button>
+
+    <ul class="sidebar-vertical">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Bag</a></li>
+    </ul>
+  </div>
+
+</nav>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileSidebar = document.getElementById('mobileSidebar');
+
+// Toggle main sidebar
+menuBtn.addEventListener('click', () => {
+  mobileSidebar.classList.toggle('open');
+});
+
+// Toggle submenus
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+submenuToggles.forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  });
+});
+
+// ✅ Filter logic for accessories.html
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li'); // desktop
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2');
+
+  // Mobile submenu items
+  const mobileSubmenuItems = document.querySelectorAll('.submenu li[data-cat]');
+  const mobileHeader = document.querySelector('#mobileSidebar h2');
+
+  // Mapping for label names
+  const labelMap = {
+    'all': 'All Accessories',
+    'bags-purses': 'Bags & Purses',
+    'jewelry': 'Jewelry',
+    'belts': 'Belts',
+    'hats-caps': 'Hats & Caps',
+    'scarves': 'Scarves',
+    'extras': 'Extras'
+  };
+
+  function applyFilter(cat, source = 'desktop') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+
+    const label = labelMap[cat] || cat;
+
+    if (source === 'desktop') {
+      header.textContent = label;
+    } else if (mobileHeader) {
+      mobileHeader.textContent = label;
+    }
+  }
+
+  // Desktop clicks
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, 'desktop');
+    });
+  });
+
+  // Mobile submenu clicks
+  mobileSubmenuItems.forEach(li => {
+    li.style.cursor = 'pointer';
+    const link = li.querySelector('a');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // prevents reload
+        mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+        li.classList.add('active');
+
+        applyFilter(li.dataset.cat, 'mobile');
+
+        if (mobileSidebar) mobileSidebar.classList.remove('open'); // close sidebar
+      });
+    }
+  });
+
+  // Apply filter from URL query (e.g., accessories.html?cat=bags-purses)
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromUrl = params.get('cat');
+  if (categoryFromUrl) {
+    const liDesktop = Array.from(filters).find(el => el.dataset.cat === categoryFromUrl);
+    const liMobile = Array.from(mobileSubmenuItems).find(el => el.dataset.cat === categoryFromUrl);
+
+    if (liDesktop) {
+      filters.forEach(el => el.classList.remove('active'));
+      liDesktop.classList.add('active');
+    }
+    if (liMobile) {
+      mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+      liMobile.classList.add('active');
+    }
+
+    applyFilter(categoryFromUrl, 'desktop');
+  } else {
+    // Default: show all accessories
+    applyFilter('all', 'desktop');
+  }
+});
+</script>
+
+
+
+
+
+<!-- ✅ Promo Section -->
+<section class="promo-section">
+  <div class="promo-container">
+    <button class="promo-arrow left">&#10094;</button>
+    
+    <div class="promo-text-wrapper">
+      <div class="promo-text active">Enjoy 10% OFF plus free shipping on your very first order.</div>
+      <div class="promo-text">Redefine elegance—luxury fashion made for you.</div>
+      <div class="promo-text">Timeless pieces, crafted to elevate your style.</div>
+      <div class="promo-text">Step into sophistication with every look.</div>
+    </div>
+    
+    <button class="promo-arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+const promoTexts = document.querySelectorAll(".promo-text");
+let currentIndex = 0;
+
+// Show text
+function showPromo(index) {
+  promoTexts.forEach((text, i) => {
+    text.classList.remove("active");
+    if (i === index) text.classList.add("active");
+  });
+}
+
+// Auto scroll
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+}, 3000);
+
+// Arrows
+document.querySelector(".promo-arrow.left").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + promoTexts.length) % promoTexts.length;
+  showPromo(currentIndex);
+});
+
+document.querySelector(".promo-arrow.right").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+});
+</script>
+
+<section class="accessories">
+  <!-- Left Filters -->
+  <aside class="filters">
+    <h2 id="categoryTitle">Accessories</h2>
+
+    <ul id="categoryFilters">
+      <li data-cat="all">All Accessories</li>
+      <li data-cat="bags-purses">Bags & Purses</li>
+      <li data-cat="jewelry">Jewelry</li>
+      <li data-cat="belts">Belts</li>
+      <li data-cat="hats-caps">Hats & Caps</li>
+      <li data-cat="scarves">Scarves</li>
+      <li data-cat="extras">Extras</li>
+    </ul>
+
+    <div class="extra-links">
+      <h3><a href="allclothing.html" class="clothing-link">Clothing</a></h3>
+      <h3><a href="featured.html" class="featured-link">Featured</a></h3>
+      <h3><a href="shoes.html" class="shoes-link">Shoes</a></h3>
+    </div>
+
+  </aside>
+
+  <div class="products">
+  <!-- Bags & Purses -->
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags1.jpg" alt="Louis Vuitton Neverfull">
+    <div class="product-info">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Neverfull</p>
+      <p class="price">₱120,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags2.jpg" alt="Gucci Marmont">
+    <div class="product-info">
+      <p class="brand">Gucci</p>
+      <p class="name">Marmont</p>
+      <p class="price">₱85,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags3.jpg" alt="Prada Re-Edition">
+    <div class="product-info">
+      <p class="brand">Prada</p>
+      <p class="name">Re-Edition</p>
+      <p class="price">₱70,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags4.jpg" alt="Chanel Classic Flap">
+    <div class="product-info">
+      <p class="brand">Chanel</p>
+      <p class="name">Classic Flap</p>
+      <p class="price">₱180,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags5.jpg" alt="Dior Saddle">
+    <div class="product-info">
+      <p class="brand">Dior</p>
+      <p class="name">Saddle Bag</p>
+      <p class="price">₱150,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="bags-purses">
+    <img src="bags6.jpg" alt="Fendi Peekaboo">
+    <div class="product-info">
+      <p class="brand">Fendi</p>
+      <p class="name">Peekaboo</p>
+      <p class="price">₱110,000</p>
+    </div>
+  </div>
+
+  <!-- Jewelry -->
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry1.jpg" alt="Tiffany & Co. Necklace">
+    <div class="product-info">
+      <p class="brand">Tiffany & Co.</p>
+      <p class="name">Necklace</p>
+      <p class="price">₱45,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry2.jpg" alt="Cartier Ring">
+    <div class="product-info">
+      <p class="brand">Cartier</p>
+      <p class="name">Ring</p>
+      <p class="price">₱95,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry3.jpg" alt="Bvlgari Earrings">
+    <div class="product-info">
+      <p class="brand">Bvlgari</p>
+      <p class="name">Earrings</p>
+      <p class="price">₱60,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry4.jpg" alt="Van Cleef & Arpels Bracelet">
+    <div class="product-info">
+      <p class="brand">Van Cleef & Arpels</p>
+      <p class="name">Bracelet</p>
+      <p class="price">₱80,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry5.jpg" alt="Chopard Watch">
+    <div class="product-info">
+      <p class="brand">Chopard</p>
+      <p class="name">Watch</p>
+      <p class="price">₱120,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="jewelry">
+    <img src="jewelry6.jpg" alt="Hermes Necklace">
+    <div class="product-info">
+      <p class="brand">Hermes</p>
+      <p class="name">Necklace</p>
+      <p class="price">₱70,000</p>
+    </div>
+  </div>
+
+  <!-- Belts -->
+  <div class="product-item" data-category="belts">
+    <img src="belts1.jpg" alt="Gucci Leather Belt">
+    <div class="product-info">
+      <p class="brand">Gucci</p>
+      <p class="name">Leather Belt</p>
+      <p class="price">₱15,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="belts">
+    <img src="belts2.jpg" alt="Hermes Belt">
+    <div class="product-info">
+      <p class="brand">Hermes</p>
+      <p class="name">Belt</p>
+      <p class="price">₱30,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="belts">
+    <img src="belts3.jpg" alt="Louis Vuitton Monogram">
+    <div class="product-info">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Monogram</p>
+      <p class="price">₱25,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="belts">
+    <img src="belts4.jpg" alt="Prada Belt">
+    <div class="product-info">
+      <p class="brand">Prada</p>
+      <p class="name">Belt</p>
+      <p class="price">₱22,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="belts">
+    <img src="belts5.jpg" alt="Fendi Belt">
+    <div class="product-info">
+      <p class="brand">Fendi</p>
+      <p class="name">Belt</p>
+      <p class="price">₱18,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="belts">
+    <img src="belts6.jpg" alt="Dior Belt">
+    <div class="product-info">
+      <p class="brand">Dior</p>
+      <p class="name">Belt</p>
+      <p class="price">₱20,000</p>
+    </div>
+  </div>
+
+  <!-- Hats & Caps -->
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats1.jpg" alt="New Era Cap">
+    <div class="product-info">
+      <p class="brand">New Era</p>
+      <p class="name">Cap</p>
+      <p class="price">₱2,500</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats2.jpg" alt="Gucci Hat">
+    <div class="product-info">
+      <p class="brand">Gucci</p>
+      <p class="name">Hat</p>
+      <p class="price">₱12,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats3.jpg" alt="Prada Cap">
+    <div class="product-info">
+      <p class="brand">Prada</p>
+      <p class="name">Cap</p>
+      <p class="price">₱10,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats4.jpg" alt="Fendi Hat">
+    <div class="product-info">
+      <p class="brand">Fendi</p>
+      <p class="name">Hat</p>
+      <p class="price">₱8,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats5.jpg" alt="Dior Cap">
+    <div class="product-info">
+      <p class="brand">Dior</p>
+      <p class="name">Cap</p>
+      <p class="price">₱11,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="hats-caps">
+    <img src="hats6.jpg" alt="Chanel Hat">
+    <div class="product-info">
+      <p class="brand">Chanel</p>
+      <p class="name">Hat</p>
+      <p class="price">₱14,000</p>
+    </div>
+  </div>
+
+  <!-- Scarves -->
+  <div class="product-item" data-category="scarves">
+    <img src="scarves1.jpg" alt="Hermes Scarf">
+    <div class="product-info">
+      <p class="brand">Hermes</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱25,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="scarves">
+    <img src="scarves2.jpg" alt="Gucci Scarf">
+    <div class="product-info">
+      <p class="brand">Gucci</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱18,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="scarves">
+    <img src="scarves3.jpg" alt="Prada Scarf">
+    <div class="product-info">
+      <p class="brand">Prada</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱20,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="scarves">
+    <img src="scarves4.jpg" alt="Louis Vuitton Scarf">
+    <div class="product-info">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱22,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="scarves">
+    <img src="scarves5.jpg" alt="Fendi Scarf">
+    <div class="product-info">
+      <p class="brand">Fendi</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱19,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="scarves">
+    <img src="scarves6.jpg" alt="Chanel Scarf">
+    <div class="product-info">
+      <p class="brand">Chanel</p>
+      <p class="name">Scarf</p>
+      <p class="price">₱24,000</p>
+    </div>
+  </div>
+
+  <!-- Extras -->
+  <div class="product-item" data-category="extras">
+    <img src="extras1.jpg" alt="Sunglasses">
+    <div class="product-info">
+      <p class="brand">Ray-Ban</p>
+      <p class="name">Sunglasses</p>
+      <p class="price">₱8,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="extras">
+    <img src="extras2.jpg" alt="Wallet">
+    <div class="product-info">
+      <p class="brand">Coach</p>
+      <p class="name">Wallet</p>
+      <p class="price">₱5,000</p>
+    </div>
+  </div>
+  <div class="product-item" data-category="extras">
+    <img src="extras3.jpg" alt="Keychain">
+    <div class="product-info">
+      <p class="brand">Louis Vuitton</p>
+      <p class="name">Keychain</p>
+      <p class="price">₱5,000
+      </p>
+      </div>
+      </div>
+      </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li');
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2'); // grab the h2
+
+  function applyFilter(cat, label = '') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+    // Update header for accessories page
+    header.textContent = label || (cat === 'all' ? 'All Accessories' : label);
+  }
+
+  // check URL parameter (so links can open specific category)
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromUrl = params.get('cat');
+
+  if (categoryFromUrl) {
+    const li = Array.from(filters).find(el => el.dataset.cat === categoryFromUrl);
+    if (li) {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(categoryFromUrl, li.textContent);
+    }
+  } else {
+    // default state: show all Accessories products
+    applyFilter('all', 'All Accessories');
+    const defaultLi = Array.from(filters).find(el => el.dataset.cat === 'all');
+    if (defaultLi) defaultLi.classList.add('active');
+  }
+
+  // handle clicks
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, li.textContent);
+    });
+  });
+
+});
+</script>
+
+
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Resources -->
+    <div class="footer-column resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-column help">
+      <h3>Help</h3>
+      <ul>
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-column company">
+      <h3>Company</h3>
+      <ul>
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-image">
+      <img src="footer-image.jpg" alt="Footer Image">
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<!-- Mobile Footer -->
+<footer class="footer-mobile">
+  <div class="footer-mobile-menu">
+    <!-- Resources -->
+    <div class="footer-item">
+      <button class="footer-btn">Resources</button>
+      <ul class="footer-submenu">
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-item">
+      <button class="footer-btn">Help</button>
+      <ul class="footer-submenu">
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-item">
+      <button class="footer-btn">Company</button>
+      <ul class="footer-submenu">
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="footer-mobile-image">
+    <img src="footer-image.jpg" alt="Footer Image">
+  </div>
+
+  <!-- Footer Copy -->
+  <p class="footer-mobile-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<script>
+  const footerButtons = document.querySelectorAll(".footer-btn");
+
+  footerButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const submenu = btn.nextElementSibling;
+      // toggle submenu display
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

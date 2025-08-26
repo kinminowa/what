@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles3.css">
+<link rel="stylesheet" href="styles4.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/javanese-text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kapakana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
+
+
+
+<title>Aureva</title>
+
+
+</head>
+<body>
+
+
+    <section class="header-hero-wrapper">
+
+  <!-- Main Header -->
+  <div class="main-header container">
+    <div class="main-left">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Collection</a>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h4>Featured</h4>
+                <ul>
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Shoes</h4>
+                <ul>
+<li><a href="shoes.html?cat=all">All Shoes</a></li>
+<li><a href="shoes.html?cat=sneakers">Sneakers</a></li>
+<li><a href="shoes.html?cat=heels-pumps">Heels & Pumps</a></li>
+<li><a href="shoes.html?cat=flats-sandals">Flats & Sandals</a></li>
+<li><a href="shoes.html?cat=boots">Boots</a></li>
+<li><a href="shoes.html?cat=sports-active">Sports & Active</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Clothing</h4>
+                <ul>
+              <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+      <li><a href="accessoriess.html">All Accessories</a></li>
+      <li><a href="accessoriess.html?cat=bags-purses">Bags & Purses</a></li>
+      <li><a href="accessoriess.html?cat=jewelry">Jewelry</a></li>
+      <li><a href="accessoriess.html?cat=belts">Belts</a></li>
+      <li><a href="accessoriess.html?cat=hats-caps">Hats & Caps</a></li>
+      <li><a href="accessoriess.html?cat=scarves">Scarves</a></li>
+      <li><a href="accessoriess.html?cat=extras">Extras</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+       </div>
+    <div class="main-icons">
+      <img src="icon.svg" alt="Favourite">
+      <img src="bag-icon.svg" alt="Bag">
+    </div>
+  </div>
+
+</section>
+
+
+  
+<header class="mobile-header">
+  <div class="mobile-top">
+    <img src="profile-icon.svg" alt="Profile" class="icon">
+    <img src="bag-icon.svg" alt="Bag" class="icon">
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </div>
+
+</header>
+
+
+<nav id="mobileSidebar" class="mobile-sidebar">
+  <ul>
+    <!-- Home -->
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Featured -->
+    <li>
+      <a href="#" class="submenu-toggle">Featured <span class="arrow">></span></a>
+      <ul class="submenu">
+<li><a href="featured.html?cat=new arrival">New Arrivals</a></li>
+<li><a href="featured.html?cat=best seller">Best Sellers</a></li>
+<li><a href="featured.html?cat=limited edition">Limited Edition</a></li>
+<li><a href="featured.html?cat=sale">Sale / Clearance</a></li>
+      </ul>
+    </li>
+
+    <!-- Shoes -->
+    <li>
+      <a href="#" class="submenu-toggle">Shoes <span class="arrow">></span></a>
+      <ul class="submenu">
+         <li data-cat="all"><a href="#">All Shoes</a></li>
+         <li data-cat="sneakers"><a href="#">Sneakers</a></li>
+        <li data-cat="heels-pumps"><a href="#">Heels & Pumps</a></li>
+       <li data-cat="flats-sandals"><a href="#">Flats & Sandals</a></li>
+       <li data-cat="boots"><a href="#">Boots</a></li>
+        <li data-cat="sports-active"><a href="#">Sports & Active</a></li>
+      </ul>
+    </li>
+
+    <!-- Clothing -->
+    <li>
+      <a href="#" class="submenu-toggle">Clothing <span class="arrow">></span></a>
+      <ul class="submenu" id="mobileCategoryFilters">
+             <li> <a href="allclothing.html?cat=all">All Clothing</a></li>
+ <li> <a href="allclothing.html?cat=tops">Tops</a></li>
+ <li> <a href="allclothing.html?cat=dresses">Dresses</a></li>
+ <li> <a href="allclothing.html?cat=bottoms">Bottoms</a></li>
+  <li> <a href="allclothing.html?cat=outerwear">Outerwear & Jackets</a></li>
+  <li> <a href="allclothing.html?cat=loungewear">Loungewear</a></li>
+  <li><a href="allclothing.html?cat=sets">Sets & Co-ords</a></li>
+      </ul>
+    </li>
+
+    <!-- Accessories -->
+    <li>
+      <a href="#" class="submenu-toggle">Accessories <span class="arrow">></span></a>
+      <ul class="submenu">
+       <li data-cat="all"><a href="#">All Accessories</a></li>
+        <li data-cat="bags-purses"><a href="#">Bags & Purses</a></li>
+       <li data-cat="jewelry"><a href="#">Jewelry</a></li>
+        <li data-cat="belts"><a href="#">Belts</a></li>
+        <li data-cat="hats-caps"><a href="#">Hats & Caps</a></li>
+        <li data-cat="scarves"><a href="#">Scarves</a></li>
+        <li data-cat="extras"><a href="#">Extras</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+
+  <!-- Sidebar Extra Content -->
+  <div class="sidebar-extra">
+    <h2 class="sidebar-title">Aureva</h2>
+    <p class="sidebar-text">
+      Become an Aureva member to unlock more fashion inspiration and style tips, helping you dress with confidence and elevate your look.
+    </p>
+    <button class="sidebar-btn">Sign In</button>
+
+    <ul class="sidebar-vertical">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Bag</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileSidebar = document.getElementById('mobileSidebar');
+
+// Toggle main sidebar
+menuBtn.addEventListener('click', () => {
+  mobileSidebar.classList.toggle('open');
+});
+
+// Toggle submenus
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+submenuToggles.forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const submenu = this.nextElementSibling;
+    if (submenu) {
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  });
+});
+
+// ✅ Filter logic for accessories.html
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#categoryFilters li'); // desktop
+  const items = document.querySelectorAll('.products .product-item');
+  const header = document.querySelector('.filters h2');
+
+  // Mobile submenu items
+  const mobileSubmenuItems = document.querySelectorAll('.submenu li[data-cat]');
+  const mobileHeader = document.querySelector('#mobileSidebar h2');
+
+  // Mapping for label names
+  const labelMap = {
+    'all': 'All Accessories',
+    'bags-purses': 'Bags & Purses',
+    'jewelry': 'Jewelry',
+    'belts': 'Belts',
+    'hats-caps': 'Hats & Caps',
+    'scarves': 'Scarves',
+    'extras': 'Extras'
+  };
+
+  function applyFilter(cat, source = 'desktop') {
+    items.forEach(item => {
+      const match = (cat === 'all') || (item.dataset.category === cat);
+      item.style.display = match ? '' : 'none';
+    });
+
+    const label = labelMap[cat] || cat;
+
+    if (source === 'desktop') {
+      header.textContent = label;
+    } else if (mobileHeader) {
+      mobileHeader.textContent = label;
+    }
+  }
+
+  // Desktop clicks
+  filters.forEach(li => {
+    li.style.cursor = 'pointer';
+    li.addEventListener('click', () => {
+      filters.forEach(el => el.classList.remove('active'));
+      li.classList.add('active');
+      applyFilter(li.dataset.cat, 'desktop');
+    });
+  });
+
+  // Mobile submenu clicks
+  mobileSubmenuItems.forEach(li => {
+    li.style.cursor = 'pointer';
+    const link = li.querySelector('a');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // prevents reload
+        mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+        li.classList.add('active');
+
+        applyFilter(li.dataset.cat, 'mobile');
+
+        if (mobileSidebar) mobileSidebar.classList.remove('open'); // close sidebar
+      });
+    }
+  });
+
+  // Apply filter from URL query (e.g., accessories.html?cat=bags-purses)
+  const params = new URLSearchParams(window.location.search);
+  const categoryFromUrl = params.get('cat');
+  if (categoryFromUrl) {
+    const liDesktop = Array.from(filters).find(el => el.dataset.cat === categoryFromUrl);
+    const liMobile = Array.from(mobileSubmenuItems).find(el => el.dataset.cat === categoryFromUrl);
+
+    if (liDesktop) {
+      filters.forEach(el => el.classList.remove('active'));
+      liDesktop.classList.add('active');
+    }
+    if (liMobile) {
+      mobileSubmenuItems.forEach(el => el.classList.remove('active'));
+      liMobile.classList.add('active');
+    }
+
+    applyFilter(categoryFromUrl, 'desktop');
+  } else {
+    // Default: show all accessories
+    applyFilter('all', 'desktop');
+  }
+});
+</script>
+
+
+
+
+
+<!-- ✅ Promo Section -->
+<section class="promo-section">
+  <div class="promo-container">
+    <button class="promo-arrow left">&#10094;</button>
+    
+    <div class="promo-text-wrapper">
+      <div class="promo-text active">Enjoy 10% OFF plus free shipping on your very first order.</div>
+      <div class="promo-text">Redefine elegance—luxury fashion made for you.</div>
+      <div class="promo-text">Timeless pieces, crafted to elevate your style.</div>
+      <div class="promo-text">Step into sophistication with every look.</div>
+    </div>
+    
+    <button class="promo-arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+<script>
+const promoTexts = document.querySelectorAll(".promo-text");
+let currentIndex = 0;
+
+// Show text
+function showPromo(index) {
+  promoTexts.forEach((text, i) => {
+    text.classList.remove("active");
+    if (i === index) text.classList.add("active");
+  });
+}
+
+// Auto scroll
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+}, 3000);
+
+// Arrows
+document.querySelector(".promo-arrow.left").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + promoTexts.length) % promoTexts.length;
+  showPromo(currentIndex);
+});
+
+document.querySelector(".promo-arrow.right").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % promoTexts.length;
+  showPromo(currentIndex);
+});
+</script>
+
+
+<div id="cartContainer"></div>
+
+
+<!-- Summary Section -->
+<div id="cartSummary" class="cart-summary">
+  <h3 class="summary-header">Summary</h3>
+
+  <div class="summary-row">
+    <span class="summary-label">Subtotal</span>
+    <span class="summary-value" id="subtotalPrice">₱0</span>
+  </div>
+
+  <hr>
+
+  <div class="summary-row total">
+    <span class="summary-label">Total</span>
+    <span class="summary-value" id="totalPrice">₱0</span>
+  </div>
+
+  <hr>
+
+  <button class="checkout-btn">Check Out</button>
+</div>
+
+<script>
+const cartContainer = document.getElementById("cartContainer");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function renderCart() {
+  cartContainer.innerHTML = ""; // Clear existing
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    updateSummary();
+    return;
+  }
+
+  cart.forEach(item => {
+    const div = document.createElement("div");
+    div.classList.add("cart-item-row");
+    div.innerHTML = `
+      <div class="cart-image-col">
+        <img src="${item.img}" alt="${item.name}" width="284" height="180">
+        <div class="quantity-controls">
+          <button class="decrease">-</button>
+          <span class="quantity">${item.quantity}</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="cart-details-col">
+        <p class="brand">${item.brand}</p>
+        <p class="name">${item.name}</p>
+        <p class="size">Size: ${item.size}</p>
+        <div class="price-summary">
+          <p class="price">${item.price}</p>
+        </div>
+      </div>
+    `;
+    cartContainer.appendChild(div);
+
+    const decreaseBtn = div.querySelector(".decrease");
+    const increaseBtn = div.querySelector(".increase");
+    const quantitySpan = div.querySelector(".quantity");
+
+    decreaseBtn.addEventListener("click", () => {
+      if (item.quantity > 1) {
+        item.quantity--;
+        quantitySpan.textContent = item.quantity;
+      } else {
+        const index = cart.indexOf(item);
+        cart.splice(index, 1);
+        div.remove();
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateSummary();
+    });
+
+    increaseBtn.addEventListener("click", () => {
+      item.quantity++;
+      quantitySpan.textContent = item.quantity;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateSummary();
+    });
+  });
+
+  updateSummary();
+}
+
+function updateSummary() {
+  const subtotalEl = document.getElementById("subtotalPrice");
+  const totalEl = document.getElementById("totalPrice");
+
+  // 👇 New: Mobile summary elements
+  const subtotalEl1 = document.getElementById("subtotalPrice1");
+  const totalEl1 = document.getElementById("totalPrice1");
+
+  let total = 0;
+  cart.forEach(i => {
+    total += parseFloat(i.price.replace(/[^0-9]/g, '')) * i.quantity;
+  });
+
+  // Update desktop summary if exists
+  if (subtotalEl) subtotalEl.textContent = `₱${total.toLocaleString()}`;
+  if (totalEl) totalEl.textContent = `₱${total.toLocaleString()}`;
+
+  // Update mobile summary if exists
+  if (subtotalEl1) subtotalEl1.textContent = `₱${total.toLocaleString()}`;
+  if (totalEl1) totalEl1.textContent = `₱${total.toLocaleString()}`;
+}
+
+renderCart();
+</script>
+
+
+
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const currentCat = params.get('cat'); // e.g., "dresses" or "sneakers"
+
+    const products = [
+        { title: 'Blue Tank Top', img: 'img2.jpg', cat: 'tops', link: 'product.html?cat=miu-miu-blue-tank-top' },
+        { title: 'Chanel Slingback Heels', img: 'shopbyicon.svg', cat: 'heels', link: 'product.html?cat=chanel-slingback-heels' },
+        { title: 'Nike Air Max', img: 'sneakers1.jpg', cat: 'sneakers', link: 'product.html?cat=nike-air-max' },
+        { title: 'Leather Bag', img: 'bag.jpg', cat: 'bags', link: 'product.html?cat=leather-bag' },
+        { title: 'Red Dress', img: 'dress.jpg', cat: 'dresses', link: 'product.html?cat=red-dress' },
+        { title: 'Baseball Cap', img: 'cap.jpg', cat: 'hats', link: 'product.html?cat=baseball-cap' },
+        { title: 'Gold Necklace', img: 'jewelry.jpg', cat: 'jewelry', link: 'product.html?cat=gold-necklace' },
+        { title: 'Sports Watch', img: 'watch.jpg', cat: 'accessories', link: 'product.html?cat=sports-watch' }
+    ];
+
+    const suggestedContainer = document.querySelector('.suggested-container');
+
+    // Filter out current product
+    const suggested = products.filter(p => p.cat !== currentCat).slice(0, 8);
+
+    suggested.forEach(p => {
+        const div = document.createElement('div');
+        div.classList.add('suggested-product');
+        div.innerHTML = `<a href="${p.link}"><img src="${p.img}" alt="${p.title}"></a>`;
+        suggestedContainer.appendChild(div);
+    });
+
+    // Scroll buttons
+    const scrollLeft = document.querySelector('.scroll-left');
+    const scrollRight = document.querySelector('.scroll-right');
+
+    // Function to get the card width (including margin)
+
+    
+    function getCardWidth() {
+        const card = document.querySelector('.suggested-product');
+        if (!card) return 360;
+        const style = window.getComputedStyle(card);
+        const margin = parseInt(style.marginLeft) + parseInt(style.marginRight);
+        return card.offsetWidth + margin;
+    }
+
+    scrollLeft.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
+    });
+    </script>
+
+    
+<section class="suggested-products" style="margin-top: 30px; padding-left: 40px;">
+  <div class="suggested-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <p style="font-family: 'Javanese Text'; font-weight: normal; font-size: 20px; color: #000; margin: 0;">You Might Also Like</p>
+    <div class="scroll-buttons" style="display: flex; gap: 10px; position: relative; right: 50px;">
+      <button class="scroll-left" aria-label="Scroll Left">&#10094;</button>
+      <button class="scroll-right" aria-label="Scroll Right">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="suggested-container" style="display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 10px;">
+    <!-- Suggested products will be dynamically generated here -->
+  </div>
+</section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const currentCat = params.get('cat'); // e.g., "dresses" or "sneakers"
+
+    const products = [
+        { title: 'Blue Tank Top', img: 'img2.jpg', cat: 'tops', link: 'product.html?cat=miu-miu-blue-tank-top' },
+        { title: 'Chanel Slingback Heels', img: 'shopbyicon.svg', cat: 'heels', link: 'product.html?cat=chanel-slingback-heels' },
+        { title: 'Nike Air Max', img: 'sneakers1.jpg', cat: 'sneakers', link: 'product.html?cat=nike-air-max' },
+        { title: 'Leather Bag', img: 'bag.jpg', cat: 'bags', link: 'product.html?cat=leather-bag' },
+        { title: 'Red Dress', img: 'dress.jpg', cat: 'dresses', link: 'product.html?cat=red-dress' },
+        { title: 'Baseball Cap', img: 'cap.jpg', cat: 'hats', link: 'product.html?cat=baseball-cap' },
+        { title: 'Gold Necklace', img: 'jewelry.jpg', cat: 'jewelry', link: 'product.html?cat=gold-necklace' },
+        { title: 'Sports Watch', img: 'watch.jpg', cat: 'accessories', link: 'product.html?cat=sports-watch' }
+    ];
+
+    const suggestedContainer = document.querySelector('.suggested-container');
+
+    // Filter out current product
+    const suggested = products.filter(p => p.cat !== currentCat).slice(0, 8);
+
+    suggested.forEach(p => {
+        const div = document.createElement('div');
+        div.classList.add('suggested-product');
+        div.innerHTML = `<a href="${p.link}"><img src="${p.img}" alt="${p.title}"></a>`;
+        suggestedContainer.appendChild(div);
+    });
+
+    // Scroll buttons
+    const scrollLeft = document.querySelector('.scroll-left');
+    const scrollRight = document.querySelector('.scroll-right');
+
+    // Function to get the card width (including margin)
+
+    
+    function getCardWidth() {
+        const card = document.querySelector('.suggested-product');
+        if (!card) return 360;
+        const style = window.getComputedStyle(card);
+        const margin = parseInt(style.marginLeft) + parseInt(style.marginRight);
+        return card.offsetWidth + margin;
+    }
+
+    scrollLeft.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
+
+    scrollRight.addEventListener('click', () => {
+        suggestedContainer.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
+    });
+    </script>
+
+<div id="cart1Summary1" class="cart1-summary1">
+  <h3 class="summary-header">Summary</h3>
+
+  <div class="summary-row">
+    <span class="summary-label">Subtotal</span>
+    <span class="summary-value" id="subtotalPrice1">₱0</span>
+  </div>
+
+  <hr>
+
+  <div class="summary-row total">
+    <span class="summary-label">Total</span>
+    <span class="summary-value" id="totalPrice1">₱0</span>
+  </div>
+
+  <hr>
+
+  <button class="checkout-btn1">Check Out</button>
+</div>
+
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Resources -->
+    <div class="footer-column resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-column help">
+      <h3>Help</h3>
+      <ul>
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-column company">
+      <h3>Company</h3>
+      <ul>
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="footer-image">
+      <img src="footer-image.jpg" alt="Footer Image">
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<!-- Mobile Footer -->
+<footer class="footer-mobile">
+  <div class="footer-mobile-menu">
+    <!-- Resources -->
+    <div class="footer-item">
+      <button class="footer-btn">Resources</button>
+      <ul class="footer-submenu">
+        <li>Find a Store</li>
+        <li>Product Advice</li>
+        <li>Send Us Feedback</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Help -->
+    <div class="footer-item">
+      <button class="footer-btn">Help</button>
+      <ul class="footer-submenu">
+        <li>Get Help</li>
+        <li>Order Status</li>
+        <li>Delivery Information</li>
+        <li>Returns & Exchanges</li>
+        <li>Payment Options</li>
+        <li>Contact Us</li>
+      </ul>
+      <hr>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-item">
+      <button class="footer-btn">Company</button>
+      <ul class="footer-submenu">
+        <li>About Aureva</li>
+        <li>News & Updates</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="footer-mobile-image">
+    <img src="footer-image.jpg" alt="Footer Image">
+  </div>
+
+  <!-- Footer Copy -->
+  <p class="footer-mobile-copy">© 2025 Aureva, Inc. All rights reserved</p>
+</footer>
+
+<script>
+  const footerButtons = document.querySelectorAll(".footer-btn");
+
+  footerButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const submenu = btn.nextElementSibling;
+      // toggle submenu display
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
